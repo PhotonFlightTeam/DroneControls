@@ -1,0 +1,15 @@
+running develop
+running egg_info
+creating photon_flight_db_internet.egg-info
+writing photon_flight_db_internet.egg-info/PKG-INFO
+writing dependency_links to photon_flight_db_internet.egg-info/dependency_links.txt
+writing requirements to photon_flight_db_internet.egg-info/requires.txt
+writing top-level names to photon_flight_db_internet.egg-info/top_level.txt
+writing manifest file 'photon_flight_db_internet.egg-info/SOURCES.txt'
+reading manifest file 'photon_flight_db_internet.egg-info/SOURCES.txt'
+writing manifest file 'photon_flight_db_internet.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/punished_venom/DroneControls/install/photon_flight_db_internet/lib/python3.14/site-packages/photon-flight-db-internet.egg-link (link to .)
+
+Installed /home/punished_venom/DroneControls/build/photon_flight_db_internet
+running symlink_data

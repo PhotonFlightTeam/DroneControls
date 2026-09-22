@@ -1,0 +1,44 @@
+[1.753s] Invoking command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/install/photon_flight_servo_imu
+[2.095s] -- The C compiler identification is GNU 15.2.0
+[2.575s] -- The CXX compiler identification is GNU 15.2.0
+[2.613s] -- Detecting C compiler ABI info
+[3.030s] -- Detecting C compiler ABI info - done
+[3.101s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.103s] -- Detecting C compile features
+[3.105s] -- Detecting C compile features - done
+[3.166s] -- Detecting CXX compiler ABI info
+[3.621s] -- Detecting CXX compiler ABI info - done
+[3.688s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.689s] -- Detecting CXX compile features
+[3.692s] -- Detecting CXX compile features - done
+[3.732s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[5.917s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.209s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[7.105s] -- Added test 'lint_cmake' to check CMake code style
+[7.124s] -- Added test 'xmllint' to check XML markup files
+[7.166s] -- Configuring done (5.4s)
+[7.236s] -- Generating done (0.1s)
+[7.245s] -- Build files have been written to: /home/punished_venom/DroneControls/build/photon_flight_servo_imu
+[7.271s] Invoked command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/install/photon_flight_servo_imu
+[7.273s] Invoking command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/build/photon_flight_servo_imu -- -j4 -l4
+[7.513s] Invoked command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/build/photon_flight_servo_imu -- -j4 -l4
+[7.588s] Invoking command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/punished_venom/DroneControls/build/photon_flight_servo_imu
+[7.661s] -- Install configuration: ""
+[7.663s] -- Execute custom install script
+[7.668s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/package_run_dependencies/photon_flight_servo_imu
+[7.672s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/parent_prefix_path/photon_flight_servo_imu
+[7.678s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.sh
+[7.709s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.dsv
+[7.710s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.sh
+[7.710s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.dsv
+[7.711s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.bash
+[7.711s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.fish
+[7.712s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.sh
+[7.717s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.zsh
+[7.721s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.dsv
+[7.722s] -- Symlinking: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.dsv
+[7.768s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/packages/photon_flight_servo_imu
+[7.776s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig.cmake
+[7.778s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig-version.cmake
+[7.780s] -- Up-to-date symlink: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.xml
+[7.798s] Invoked command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/punished_venom/DroneControls/build/photon_flight_servo_imu

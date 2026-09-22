@@ -1,0 +1,22 @@
+[1.794s] Invoking command in '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection -- -j4 -l4
+[1.965s] Invoked command in '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection -- -j4 -l4
+[2.014s] Invoking command in '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection
+[2.065s] -- Install configuration: ""
+[2.071s] -- Execute custom install script
+[2.074s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/ament_index/resource_index/package_run_dependencies/photon_flight_liDAR_Collection
+[2.079s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/ament_index/resource_index/parent_prefix_path/photon_flight_liDAR_Collection
+[2.084s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/ament_prefix_path.sh
+[2.088s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/ament_prefix_path.dsv
+[2.096s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/path.sh
+[2.112s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/path.dsv
+[2.130s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.bash
+[2.132s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.fish
+[2.142s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.sh
+[2.146s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.zsh
+[2.148s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.dsv
+[2.149s] -- Symlinking: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/package.dsv
+[2.187s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/ament_index/resource_index/packages/photon_flight_liDAR_Collection
+[2.188s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/cmake/photon_flight_liDAR_CollectionConfig.cmake
+[2.195s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/cmake/photon_flight_liDAR_CollectionConfig-version.cmake
+[2.196s] -- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/package.xml
+[2.312s] Invoked command in '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection

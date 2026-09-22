@@ -1,0 +1,5 @@
+[1.771s] Invoking command in '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection -- -j4 -l4
+[1.851s] [0mCMake Error: The source directory "/home/punished_venom/DroneControls/src/photon_flight_liDAR_Collection" does not exist.
+[1.852s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[1.857s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.870s] Invoked command in '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection' returned '2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection -- -j4 -l4

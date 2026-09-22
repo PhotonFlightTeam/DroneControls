@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000606] (photon_flight_camera) JobQueued: {'identifier': 'photon_flight_camera', 'dependencies': OrderedDict()}
+[0.001157] (photon_flight_db_internet) JobQueued: {'identifier': 'photon_flight_db_internet', 'dependencies': OrderedDict()}
+[0.001378] (photon_flight_liDAR_Collection) JobQueued: {'identifier': 'photon_flight_liDAR_Collection', 'dependencies': OrderedDict()}
+[0.002110] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.002466] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.002921] (photon_flight_camera) JobStarted: {'identifier': 'photon_flight_camera'}
+[0.031749] (photon_flight_db_internet) JobStarted: {'identifier': 'photon_flight_db_internet'}
+[0.052953] (photon_flight_liDAR_Collection) JobStarted: {'identifier': 'photon_flight_liDAR_Collection'}
+[0.065558] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.099342] (-) TimerEvent: {}
+[0.200166] (-) TimerEvent: {}
+[0.300825] (-) TimerEvent: {}
+[0.401454] (-) TimerEvent: {}
+[0.502106] (-) TimerEvent: {}
+[0.602699] (-) TimerEvent: {}
+[0.703279] (-) TimerEvent: {}
+[0.803922] (-) TimerEvent: {}
+[0.904946] (-) TimerEvent: {}
+[1.005702] (-) TimerEvent: {}
+[1.106359] (-) TimerEvent: {}
+[1.207020] (-) TimerEvent: {}
+[1.307683] (-) TimerEvent: {}
+[1.408653] (-) TimerEvent: {}
+[1.509220] (-) TimerEvent: {}
+[1.609783] (-) TimerEvent: {}
+[1.710461] (-) TimerEvent: {}
+[1.811626] (-) TimerEvent: {}
+[1.825171] (photon_flight_liDAR_Collection) JobProgress: {'identifier': 'photon_flight_liDAR_Collection', 'progress': 'cmake'}
+[1.827740] (photon_flight_liDAR_Collection) JobProgress: {'identifier': 'photon_flight_liDAR_Collection', 'progress': 'build'}
+[1.830449] (photon_flight_liDAR_Collection) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.204.74 51792 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '142', 'TERM': 'xterm', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection', 'LC_ALL': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '100.70.204.74 51792 100.71.17.45 22', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[1.847486] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[1.850280] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'build'}
+[1.851110] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.204.74 51792 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '142', 'TERM': 'xterm', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '100.70.204.74 51792 100.71.17.45 22', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[1.911874] (-) TimerEvent: {}
+[2.015311] (photon_flight_liDAR_Collection) CommandEnded: {'returncode': 0}
+[2.017295] (-) TimerEvent: {}
+[2.022126] (photon_flight_liDAR_Collection) JobProgress: {'identifier': 'photon_flight_liDAR_Collection', 'progress': 'install'}
+[2.061350] (photon_flight_liDAR_Collection) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection'], 'cwd': '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.204.74 51792 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '142', 'TERM': 'xterm', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection', 'LC_ALL': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '100.70.204.74 51792 100.71.17.45 22', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[2.073087] (photon_flight_servo_imu) CommandEnded: {'returncode': 0}
+[2.075506] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'install'}
+[2.075998] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu'], 'cwd': '/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.204.74 51792 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '142', 'TERM': 'xterm', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '100.70.204.74 51792 100.71.17.45 22', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[2.099027] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.101301] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.104567] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/ament_index/resource_index/package_run_dependencies/photon_flight_liDAR_Collection\n'}
+[2.105304] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/ament_index/resource_index/parent_prefix_path/photon_flight_liDAR_Collection\n'}
+[2.105804] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/ament_prefix_path.sh\n'}
+[2.108868] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/ament_prefix_path.dsv\n'}
+[2.109574] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/path.sh\n'}
+[2.110264] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/environment/path.dsv\n'}
+[2.113980] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.bash\n'}
+[2.114951] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.fish\n'}
+[2.115570] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.sh\n'}
+[2.116197] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.zsh\n'}
+[2.120230] (-) TimerEvent: {}
+[2.120873] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/local_setup.dsv\n'}
+[2.121598] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/package.dsv\n'}
+[2.126550] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.129477] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.132010] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/ament_index/resource_index/package_run_dependencies/photon_flight_servo_imu\n'}
+[2.134628] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/ament_index/resource_index/parent_prefix_path/photon_flight_servo_imu\n'}
+[2.137480] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.sh\n'}
+[2.139426] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.dsv\n'}
+[2.142703] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.sh\n'}
+[2.143801] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.dsv\n'}
+[2.146074] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.bash\n'}
+[2.148454] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.fish\n'}
+[2.150116] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.sh\n'}
+[2.153036] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.zsh\n'}
+[2.154325] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.dsv\n'}
+[2.156690] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/ament_index/resource_index/packages/photon_flight_liDAR_Collection\n'}
+[2.157405] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.dsv\n'}
+[2.158201] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/cmake/photon_flight_liDAR_CollectionConfig.cmake\n'}
+[2.158809] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/cmake/photon_flight_liDAR_CollectionConfig-version.cmake\n'}
+[2.163184] (photon_flight_liDAR_Collection) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/share/photon_flight_liDAR_Collection/package.xml\n'}
+[2.171386] (photon_flight_liDAR_Collection) CommandEnded: {'returncode': 0}
+[2.207092] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/ament_index/resource_index/packages/photon_flight_servo_imu\n'}
+[2.211593] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig.cmake\n'}
+[2.215508] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig-version.cmake\n'}
+[2.218137] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/punished_venom/DroneControls/src/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.xml\n'}
+[2.220763] (-) TimerEvent: {}
+[2.311088] (photon_flight_liDAR_Collection) JobEnded: {'identifier': 'photon_flight_liDAR_Collection', 'rc': 0}
+[2.315176] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[2.323663] (-) TimerEvent: {}
+[2.341005] (photon_flight_servo_imu) CommandEnded: {'returncode': 0}
+[2.424073] (-) TimerEvent: {}
+[2.438509] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 0}
+[2.448270] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[2.448480] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/punished_venom/DroneControls/src/rplidar_ros', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/install/rplidar_ros'], 'cwd': '/home/punished_venom/DroneControls/src/build/rplidar_ros', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.204.74 51792 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '142', 'TERM': 'xterm', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/src/build/rplidar_ros', 'LC_ALL': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '100.70.204.74 51792 100.71.17.45 22', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[2.489620] (rplidar_ros) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):\n'}
+[2.490558] (rplidar_ros) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[2.491118] (rplidar_ros) StderrLine: {'line': b'  CMake.\n'}
+[2.491550] (rplidar_ros) StderrLine: {'line': b'\n'}
+[2.491985] (rplidar_ros) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[2.492438] (rplidar_ros) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[2.493393] (rplidar_ros) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[2.494291] (rplidar_ros) StderrLine: {'line': b'\n'}
+[2.494814] (rplidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[2.524386] (-) TimerEvent: {}
+[2.528146] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)\n'}
+[2.624574] (-) TimerEvent: {}
+[2.728626] (-) TimerEvent: {}
+[2.829343] (-) TimerEvent: {}
+[2.930859] (-) TimerEvent: {}
+[3.032554] (-) TimerEvent: {}
+[3.133607] (-) TimerEvent: {}
+[3.235605] (-) TimerEvent: {}
+[3.336342] (-) TimerEvent: {}
+[3.438149] (-) TimerEvent: {}
+[3.529886] (rplidar_ros) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.538302] (-) TimerEvent: {}
+[3.557893] (rplidar_ros) StdoutLine: {'line': b'-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)\n'}
+[3.638461] (-) TimerEvent: {}
+[3.661109] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)\n'}
+[3.688220] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)\n'}
+[3.730324] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.738626] (-) TimerEvent: {}
+[3.772282] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.838817] (-) TimerEvent: {}
+[3.939742] (-) TimerEvent: {}
+[4.006410] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)\n'}
+[4.012138] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.039880] (-) TimerEvent: {}
+[4.127515] (rplidar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.140065] (-) TimerEvent: {}
+[4.241005] (-) TimerEvent: {}
+[4.342047] (-) TimerEvent: {}
+[4.444940] (-) TimerEvent: {}
+[4.500305] (rplidar_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)\n'}
+[4.545200] (-) TimerEvent: {}
+[4.649264] (-) TimerEvent: {}
+[4.750611] (-) TimerEvent: {}
+[4.832909] (rplidar_ros) StdoutLine: {'line': b'-- Found std_srvs: 5.9.3 (/opt/ros/lyrical/share/std_srvs/cmake)\n'}
+[4.850810] (-) TimerEvent: {}
+[4.903927] (rplidar_ros) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:61 (ament_target_dependencies):\n'}
+[4.904650] (rplidar_ros) StderrLine: {'line': b'  Unknown CMake command "ament_target_dependencies".\n'}
+[4.905192] (rplidar_ros) StderrLine: {'line': b'\n'}
+[4.905595] (rplidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[4.909117] (rplidar_ros) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.926955] (rplidar_ros) CommandEnded: {'returncode': 1}
+[4.950981] (-) TimerEvent: {}
+[5.003223] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 1}
+[5.051151] (-) TimerEvent: {}
+[5.152079] (-) TimerEvent: {}
+[5.252768] (-) TimerEvent: {}
+[5.353780] (-) TimerEvent: {}
+[5.454363] (-) TimerEvent: {}
+[5.554976] (-) TimerEvent: {}
+[5.655584] (-) TimerEvent: {}
+[5.756212] (-) TimerEvent: {}
+[5.856805] (-) TimerEvent: {}
+[5.957937] (-) TimerEvent: {}
+[6.060034] (-) TimerEvent: {}
+[6.078673] (photon_flight_db_internet) JobEnded: {'identifier': 'photon_flight_db_internet', 'rc': 'SIGINT'}
+[6.160202] (-) TimerEvent: {}
+[6.172772] (photon_flight_camera) JobEnded: {'identifier': 'photon_flight_camera', 'rc': 'SIGINT'}
+[6.175552] (-) EventReactorShutdown: {}

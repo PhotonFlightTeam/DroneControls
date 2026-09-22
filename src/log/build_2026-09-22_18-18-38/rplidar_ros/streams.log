@@ -1,0 +1,28 @@
+[0.101s] Invoking command in '/home/punished_venom/DroneControls/src/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/install/rplidar_ros
+[0.144s] [0mCMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
+[0.144s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.145s]   CMake.
+[0.145s] 
+[0.147s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.148s]   to tell CMake that the project requires at least <min> but has been updated
+[0.148s]   to work with policies introduced by <max> or earlier.
+[0.149s] 
+[0.149s] [0m
+[0.176s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[1.175s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.204s] -- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+[1.297s] -- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+[1.318s] -- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+[1.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.628s] -- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+[1.634s] -- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)
+[1.743s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.012s] -- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+[2.367s] -- Found std_srvs: 5.9.3 (/opt/ros/lyrical/share/std_srvs/cmake)
+[2.445s] [31mCMake Error at CMakeLists.txt:61 (ament_target_dependencies):
+[2.446s]   Unknown CMake command "ament_target_dependencies".
+[2.446s] 
+[2.446s] [0m
+[2.449s] -- Configuring incomplete, errors occurred!
+[2.469s] Invoked command in '/home/punished_venom/DroneControls/src/build/rplidar_ros' returned '1': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/install/rplidar_ros

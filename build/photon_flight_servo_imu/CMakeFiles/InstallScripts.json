@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/punished_venom/DroneControls/build/photon_flight_servo_imu/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

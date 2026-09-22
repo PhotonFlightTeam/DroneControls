@@ -9045,3 +9045,171 @@ events:
         - "/usr/pkg"
         - "/opt"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ros/lyrical/share/ament_cmake_cppcheck/cmake/ament_cppcheck.cmake:43 (find_program)"
+      - "/opt/ros/lyrical/share/ament_cmake_cppcheck/cmake/ament_cmake_cppcheck_lint_hook.cmake:87 (ament_cppcheck)"
+      - "/opt/ros/lyrical/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)"
+      - "/opt/ros/lyrical/share/ament_lint_auto/cmake/ament_lint_auto_package_hook.cmake:21 (ament_execute_extensions)"
+      - "/opt/ros/lyrical/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)"
+      - "/opt/ros/lyrical/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)"
+      - "CMakeLists.txt:26 (ament_package)"
+    mode: "program"
+    variable: "ament_cppcheck_BIN"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ament_cppcheck"
+    candidate_directories:
+      - "/opt/ros/lyrical/bin/"
+      - "/opt/ros/lyrical/sbin/"
+      - "/opt/ros/lyrical/"
+      - "/opt/ros/lyrical/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/bin/"
+      - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/sbin/"
+      - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    found: "/opt/ros/lyrical/bin/ament_cppcheck"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/lyrical"
+      ENV{PATH}:
+        - "/opt/ros/lyrical/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ros/lyrical/share/ament_cmake_uncrustify/cmake/ament_uncrustify.cmake:49 (find_program)"
+      - "/opt/ros/lyrical/share/ament_cmake_uncrustify/cmake/ament_cmake_uncrustify_lint_hook.cmake:50 (ament_uncrustify)"
+      - "/opt/ros/lyrical/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)"
+      - "/opt/ros/lyrical/share/ament_lint_auto/cmake/ament_lint_auto_package_hook.cmake:21 (ament_execute_extensions)"
+      - "/opt/ros/lyrical/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)"
+      - "/opt/ros/lyrical/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)"
+      - "CMakeLists.txt:26 (ament_package)"
+    mode: "program"
+    variable: "ament_uncrustify_BIN"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ament_uncrustify"
+    candidate_directories:
+      - "/opt/ros/lyrical/bin/"
+      - "/opt/ros/lyrical/sbin/"
+      - "/opt/ros/lyrical/"
+      - "/opt/ros/lyrical/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/bin/"
+      - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/sbin/"
+      - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    found: "/opt/ros/lyrical/bin/ament_uncrustify"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/lyrical"
+      ENV{PATH}:
+        - "/opt/ros/lyrical/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/home/punished_venom/DroneControls/src/install/photon_flight_liDAR_Collection"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...

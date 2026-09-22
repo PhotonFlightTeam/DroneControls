@@ -1,6 +1,0 @@
-source;share/photon_flight_db_internet/hook/pythonpath.ps1
-source;share/photon_flight_db_internet/hook/pythonpath.dsv
-source;share/photon_flight_db_internet/hook/pythonpath.sh
-source;share/photon_flight_db_internet/hook/ament_prefix_path.ps1
-source;share/photon_flight_db_internet/hook/ament_prefix_path.dsv
-source;share/photon_flight_db_internet/hook/ament_prefix_path.sh
