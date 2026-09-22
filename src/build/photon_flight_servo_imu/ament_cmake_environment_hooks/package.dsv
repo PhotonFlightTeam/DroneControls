@@ -1,0 +1,5 @@
+source;share/photon_flight_servo_imu/local_setup.bash
+source;share/photon_flight_servo_imu/local_setup.dsv
+source;share/photon_flight_servo_imu/local_setup.fish
+source;share/photon_flight_servo_imu/local_setup.sh
+source;share/photon_flight_servo_imu/local_setup.zsh

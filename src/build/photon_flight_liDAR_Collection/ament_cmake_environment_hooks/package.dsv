@@ -1,0 +1,5 @@
+source;share/photon_flight_liDAR_Collection/local_setup.bash
+source;share/photon_flight_liDAR_Collection/local_setup.dsv
+source;share/photon_flight_liDAR_Collection/local_setup.fish
+source;share/photon_flight_liDAR_Collection/local_setup.sh
+source;share/photon_flight_liDAR_Collection/local_setup.zsh

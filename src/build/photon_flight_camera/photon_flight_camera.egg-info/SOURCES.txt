@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../build/photon_flight_camera/photon_flight_camera.egg-info/PKG-INFO
+../build/photon_flight_camera/photon_flight_camera.egg-info/SOURCES.txt
+../build/photon_flight_camera/photon_flight_camera.egg-info/dependency_links.txt
+../build/photon_flight_camera/photon_flight_camera.egg-info/requires.txt
+../build/photon_flight_camera/photon_flight_camera.egg-info/top_level.txt
+../build/photon_flight_camera/photon_flight_camera.egg-info/zip-safe
+photon_flight_camera/__init__.py
+photon_flight_camera/py.typed
+resource/photon_flight_camera
+test/test_copyright.py
+test/test_flake8.py
+test/test_mypy.py
+test/test_pep257.py
+test/test_xmllint.py

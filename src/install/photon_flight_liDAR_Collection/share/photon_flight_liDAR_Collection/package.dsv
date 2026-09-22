@@ -1,0 +1,8 @@
+source;share/photon_flight_liDAR_Collection/hook/cmake_prefix_path.ps1
+source;share/photon_flight_liDAR_Collection/hook/cmake_prefix_path.dsv
+source;share/photon_flight_liDAR_Collection/hook/cmake_prefix_path.sh
+source;share/photon_flight_liDAR_Collection/local_setup.bash
+source;share/photon_flight_liDAR_Collection/local_setup.dsv
+source;share/photon_flight_liDAR_Collection/local_setup.ps1
+source;share/photon_flight_liDAR_Collection/local_setup.sh
+source;share/photon_flight_liDAR_Collection/local_setup.zsh
