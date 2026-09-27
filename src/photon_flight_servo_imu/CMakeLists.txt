@@ -11,6 +11,13 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+
+add_executable(servo_driver src/photon_flight_servo_imu/servodriver.cpp)
+add_executable(imu_reader src/photon_flight_servo_imu/imucapture.cpp)
+
+ament_target_dependencies(servo_driver rclcpp std_msgs)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
