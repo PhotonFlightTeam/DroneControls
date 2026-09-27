@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.16)
 project(photon_flight_servo_imu)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -11,13 +11,39 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
-add_executable(servo_driver src/photon_flight_servo_imu/servodriver.cpp)
-add_executable(imu_reader src/photon_flight_servo_imu/imucapture.cpp)
+add_executable(servo_driver src/servodriver.cpp)
+#add_executable(imu_reader src/imucapture.cpp)
 
-ament_target_dependencies(servo_driver rclcpp std_msgs)
+target_link_libraries(servo_driver
+  rclcpp::rclcpp
+  std_msgs::std_msgs__rosidl_generator_c
+  std_msgs::std_msgs__rosidl_typesupport_cpp
+  sensor_msgs::sensor_msgs__rosidl_generator_c
+  sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
+  lgpio
+)
+
+#target_link_libraries(imu_reader
+ 
+#  rclcpp::rclcpp
+#  std_msgs::std_msgs__rosidl_generator_c
+#  std_msgs::std_msgs__rosidl_typesupport_cpp
+#  sensor_msgs::sensor_msgs__rosidl_generator_c
+#  sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
+# )
+
+target_link_libraries(servo_driver lgpio)
+
+install(TARGETS
+  servo_driver
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
