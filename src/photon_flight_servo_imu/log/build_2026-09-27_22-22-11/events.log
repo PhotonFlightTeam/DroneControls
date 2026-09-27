@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.000593] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.001864] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.032501] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[0.034437] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'build'}
+[0.036166] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.40.23 52278 22', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'SHLVL': '1', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '297', 'TERM': 'xterm', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'ROS_DOMAIN_ID': '101', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'SSH_CONNECTION': '100.70.40.23 52278 100.71.17.45 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[0.099395] (-) TimerEvent: {}
+[0.104786] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.105342] (photon_flight_servo_imu) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.105594] (photon_flight_servo_imu) StderrLine: {'line': b'  CMake.\n'}
+[0.105866] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[0.106086] (photon_flight_servo_imu) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.106289] (photon_flight_servo_imu) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.106485] (photon_flight_servo_imu) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.106706] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[0.106947] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0m\n'}
+[0.125073] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)\n'}
+[0.199603] (-) TimerEvent: {}
+[0.300304] (-) TimerEvent: {}
+[0.400935] (-) TimerEvent: {}
+[0.501882] (-) TimerEvent: {}
+[0.602459] (-) TimerEvent: {}
+[0.703011] (-) TimerEvent: {}
+[0.803494] (-) TimerEvent: {}
+[0.876763] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.896474] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)\n'}
+[0.903702] (-) TimerEvent: {}
+[0.954239] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)\n'}
+[0.968072] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)\n'}
+[0.995366] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.003848] (-) TimerEvent: {}
+[1.024143] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.104037] (-) TimerEvent: {}
+[1.187805] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)\n'}
+[1.191975] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.204183] (-) TimerEvent: {}
+[1.266054] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.304346] (-) TimerEvent: {}
+[1.404926] (-) TimerEvent: {}
+[1.452051] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)\n'}
+[1.491066] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)\n'}
+[1.505067] (-) TimerEvent: {}
+[1.599185] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)\n'}
+[1.605231] (-) TimerEvent: {}
+[1.705788] (-) TimerEvent: {}
+[1.806298] (-) TimerEvent: {}
+[1.906991] (-) TimerEvent: {}
+[2.007788] (-) TimerEvent: {}
+[2.068788] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.069330] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.069580] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.077400] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.077867] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[2.092016] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.100053] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.107931] (-) TimerEvent: {}
+[2.154355] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.154835] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.162568] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.166374] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configuring done (2.1s)\n'}
+[2.208077] (-) TimerEvent: {}
+[2.223279] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.308245] (-) TimerEvent: {}
+[2.326474] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Build files have been written to: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu\n'}
+[2.408444] (-) TimerEvent: {}
+[2.457200] (photon_flight_servo_imu) StdoutLine: {'line': b'[100%] Built target servo_driver\n'}
+[2.490922] (photon_flight_servo_imu) CommandEnded: {'returncode': 0}
+[2.493880] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'install'}
+[2.508611] (-) TimerEvent: {}
+[2.521395] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu'], 'cwd': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.40.23 52278 22', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'SHLVL': '1', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '297', 'TERM': 'xterm', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'ROS_DOMAIN_ID': '101', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'SSH_CONNECTION': '100.70.40.23 52278 100.71.17.45 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[2.545335] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.546646] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.547776] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/lib/photon_flight_servo_imu/servo_driver\n'}
+[2.576269] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/ament_index/resource_index/package_run_dependencies/photon_flight_servo_imu\n'}
+[2.605150] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/ament_index/resource_index/parent_prefix_path/photon_flight_servo_imu\n'}
+[2.608772] (-) TimerEvent: {}
+[2.633260] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.sh\n'}
+[2.661487] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.dsv\n'}
+[2.689083] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.sh\n'}
+[2.708923] (-) TimerEvent: {}
+[2.716062] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.dsv\n'}
+[2.743850] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.bash\n'}
+[2.771145] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.fish\n'}
+[2.798612] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.sh\n'}
+[2.809187] (-) TimerEvent: {}
+[2.825040] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.zsh\n'}
+[2.852352] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.dsv\n'}
+[2.879628] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.dsv\n'}
+[2.907164] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/ament_index/resource_index/packages/photon_flight_servo_imu\n'}
+[2.909371] (-) TimerEvent: {}
+[2.934516] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig.cmake\n'}
+[2.961147] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig-version.cmake\n'}
+[2.987512] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Symlinking: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.xml\n'}
+[3.009551] (-) TimerEvent: {}
+[3.018571] (photon_flight_servo_imu) CommandEnded: {'returncode': 0}
+[3.097342] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 0}
+[3.100239] (-) EventReactorShutdown: {}

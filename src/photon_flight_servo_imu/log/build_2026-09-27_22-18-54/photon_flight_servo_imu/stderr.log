@@ -1,0 +1,23 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+/usr/bin/aarch64-linux-gnu-ld.bfd: /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1c): undefined reference to `main'
+/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/imu_reader.dir/build.make:174: imu_reader] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_reader.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:[m[K In constructor ‘[01m[KServoDriverNode::[01;32m[KServoDriverNode[m[K()[m[K’:
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:55:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   55 |             [01;31m[K50ms[m[K, std::bind(&ServoDriverNode::update_angle_callback, this)
+      |             [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/servo_driver.dir/build.make:79: CMakeFiles/servo_driver.dir/src/servodriver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/servo_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

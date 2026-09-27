@@ -1,0 +1,12 @@
+[0.035s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu
+[0.063s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.063s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.063s]   CMake.
+[0.063s] 
+[0.064s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.064s]   to tell CMake that the project requires at least <min> but has been updated
+[0.064s]   to work with policies introduced by <max> or earlier.
+[0.064s] 
+[0.065s] [0m
+[0.255s] -- The C compiler identification is GNU 15.2.0
+[0.288s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu

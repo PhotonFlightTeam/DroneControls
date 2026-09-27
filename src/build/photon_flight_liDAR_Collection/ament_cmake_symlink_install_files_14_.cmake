@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/punished_venom/DroneControls/src/photon_flight_liDAR_Collection" FILES "/home/punished_venom/DroneControls/src/photon_flight_liDAR_Collection/package.xml" "DESTINATION" "share/photon_flight_liDAR_Collection")

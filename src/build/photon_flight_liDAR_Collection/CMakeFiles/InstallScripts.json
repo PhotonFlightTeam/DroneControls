@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

@@ -1,9 +1,0 @@
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/uninstall.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/photon_flight_liDAR_Collection_uninstall.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/test.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/edit_cache.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/rebuild_cache.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/list_install_components.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/install.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/install/local.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_liDAR_Collection/CMakeFiles/install/strip.dir

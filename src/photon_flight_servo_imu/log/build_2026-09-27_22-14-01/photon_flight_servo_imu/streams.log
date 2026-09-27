@@ -1,0 +1,36 @@
+[0.038s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4
+[0.195s] [ 25%] [1m[32mLinking CXX executable imu_reader[0m
+[0.230s] [ 50%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servodriver.cpp.o[0m
+[0.251s] /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find -lsensor_msgs:sensor_msgs: No such file or directory
+[0.313s] collect2: error: ld returned 1 exit status
+[0.317s] gmake[2]: *** [CMakeFiles/imu_reader.dir/build.make:176: imu_reader] Error 1
+[0.318s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_reader.dir/all] Error 2
+[0.318s] gmake[1]: *** Waiting for unfinished jobs....
+[8.886s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:[m[K In constructor ‘[01m[KServoDriverNode::[01;32m[KServoDriverNode[m[K()[m[K’:
+[8.887s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:54:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KServoDriverNode::create_wall_timer(int, std::_Bind_helper<false, void (ServoDriverNode::*)(), ServoDriverNode*>::type)[m[K’
+[8.887s]    54 |         timer_ = [01;31m[Kthis->create_wall_timer([m[K
+[8.887s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[8.887s]    55 | [01;31m[K            50, std::bind(&ServoDriverNode::update_angle_callback, this)[m[K
+[8.888s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.888s]    56 | [01;31m[K        )[m[K;
+[8.888s]       |         [01;31m[K~[m[K                                
+[8.888s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:54:41:[m[K [01;36m[Knote: [m[Kthere is 1 candidate
+[8.889s] In file included from [01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:27[m[K,
+[8.889s]                  from [01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[8.889s]                  from [01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/rclcpp.hpp:174[m[K,
+[8.889s]                  from [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:3[m[K:
+[8.890s] [01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/node.hpp:242:3:[m[K [01;36m[Knote: [m[Kcandidate 1: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_wall_timer[m[K(std::chrono::duration<_Rep1, _Period1>, CallbackT, const rclcpp::CallbackGroup::SharedPtr&, bool)[m[K’
+[8.890s]   242 |   [01;36m[Kcreate_wall_timer[m[K(
+[8.890s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[8.890s] [01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/node.hpp:242:3:[m[K [01;36m[Knote: [m[Ktemplate argument deduction/substitution failed:
+[8.891s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:54:41:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint[m[K’
+[8.891s]    54 |         timer_ = [01;36m[Kthis->create_wall_timer([m[K
+[8.891s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[8.891s]    55 | [01;36m[K            50, std::bind(&ServoDriverNode::update_angle_callback, this)[m[K
+[8.892s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.892s]    56 | [01;36m[K        )[m[K;
+[8.892s]       |         [01;36m[K~[m[K                                
+[14.059s] gmake[2]: *** [CMakeFiles/servo_driver.dir/build.make:79: CMakeFiles/servo_driver.dir/src/servodriver.cpp.o] Error 1
+[14.060s] gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/servo_driver.dir/all] Error 2
+[14.060s] gmake: *** [Makefile:146: all] Error 2
+[14.067s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4

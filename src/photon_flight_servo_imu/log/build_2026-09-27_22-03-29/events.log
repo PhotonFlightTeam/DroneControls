@@ -1,0 +1,75 @@
+[0.000000] (-) TimerEvent: {}
+[0.000579] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.001856] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.031971] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[0.033738] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '/home/punished_venom/DroneControls/src/photon_flight_servo_imu', '-DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu'], 'cwd': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'env': OrderedDict({'SSH_CLIENT': '100.70.40.23 52278 22', 'USER': 'punished_venom', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'SHLVL': '1', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm', 'XDG_SESSION_ID': '297', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'ROS_DOMAIN_ID': '101', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.70.40.23 52278 100.71.17.45 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[0.063177] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.063714] (photon_flight_servo_imu) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.064035] (photon_flight_servo_imu) StderrLine: {'line': b'  CMake.\n'}
+[0.064294] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[0.064501] (photon_flight_servo_imu) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.064702] (photon_flight_servo_imu) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.064963] (photon_flight_servo_imu) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.065245] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[0.065472] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0m\n'}
+[0.099369] (-) TimerEvent: {}
+[0.200251] (-) TimerEvent: {}
+[0.252601] (photon_flight_servo_imu) StdoutLine: {'line': b'-- The C compiler identification is GNU 15.2.0\n'}
+[0.300422] (-) TimerEvent: {}
+[0.401187] (-) TimerEvent: {}
+[0.500152] (photon_flight_servo_imu) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 15.2.0\n'}
+[0.501295] (-) TimerEvent: {}
+[0.524214] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601468] (-) TimerEvent: {}
+[0.702138] (-) TimerEvent: {}
+[0.794603] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.802269] (-) TimerEvent: {}
+[0.846927] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.847843] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.849494] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.891190] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.902452] (-) TimerEvent: {}
+[1.003063] (-) TimerEvent: {}
+[1.103688] (-) TimerEvent: {}
+[1.186867] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.203823] (-) TimerEvent: {}
+[1.239538] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.240635] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.242964] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.271220] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)\n'}
+[1.303980] (-) TimerEvent: {}
+[1.404587] (-) TimerEvent: {}
+[1.505230] (-) TimerEvent: {}
+[1.605826] (-) TimerEvent: {}
+[1.706442] (-) TimerEvent: {}
+[1.807009] (-) TimerEvent: {}
+[1.907488] (-) TimerEvent: {}
+[2.008050] (-) TimerEvent: {}
+[2.108764] (-) TimerEvent: {}
+[2.135768] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)\n'}
+[2.208956] (-) TimerEvent: {}
+[2.221072] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)\n'}
+[2.244680] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)\n'}
+[2.285307] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.309107] (-) TimerEvent: {}
+[2.323357] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.409299] (-) TimerEvent: {}
+[2.509819] (-) TimerEvent: {}
+[2.518304] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)\n'}
+[2.525419] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.610011] (-) TimerEvent: {}
+[2.615463] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.710214] (-) TimerEvent: {}
+[2.810781] (-) TimerEvent: {}
+[2.823523] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)\n'}
+[2.865919] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)\n'}
+[2.910972] (-) TimerEvent: {}
+[2.981201] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:22 (ament_target_dependencies):\n'}
+[2.981744] (photon_flight_servo_imu) StderrLine: {'line': b'  Unknown CMake command "ament_target_dependencies".\n'}
+[2.982060] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[2.982316] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0m\n'}
+[2.982552] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.002135] (photon_flight_servo_imu) CommandEnded: {'returncode': 1}
+[3.011145] (-) TimerEvent: {}
+[3.068920] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 1}
+[3.081260] (-) EventReactorShutdown: {}

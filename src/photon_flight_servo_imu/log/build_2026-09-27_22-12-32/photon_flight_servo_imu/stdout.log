@@ -1,0 +1,2 @@
+[ 25%] [1m[32mLinking CXX executable imu_reader[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servodriver.cpp.o[0m

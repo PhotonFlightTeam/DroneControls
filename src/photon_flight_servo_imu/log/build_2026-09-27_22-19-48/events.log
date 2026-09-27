@@ -1,0 +1,175 @@
+[0.000000] (-) TimerEvent: {}
+[0.000635] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.001862] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.033015] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[0.034916] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'build'}
+[0.036891] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'env': OrderedDict({'SSH_CLIENT': '100.70.40.23 52278 22', 'USER': 'punished_venom', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'SHLVL': '1', 'HOME': '/home/punished_venom', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '297', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'ROS_DOMAIN_ID': '101', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu', 'SSH_CONNECTION': '100.70.40.23 52278 100.71.17.45 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[0.099435] (-) TimerEvent: {}
+[0.200232] (-) TimerEvent: {}
+[0.204574] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 25%] \x1b[1m\x1b[32mLinking CXX executable imu_reader\x1b[0m\n'}
+[0.237502] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servodriver.cpp.o\x1b[0m\n'}
+[0.300505] (-) TimerEvent: {}
+[0.401172] (-) TimerEvent: {}
+[0.501822] (-) TimerEvent: {}
+[0.602553] (-) TimerEvent: {}
+[0.701447] (photon_flight_servo_imu) StderrLine: {'line': b"/usr/bin/aarch64-linux-gnu-ld.bfd: /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':\n"}
+[0.702066] (photon_flight_servo_imu) StderrLine: {'line': b"(.text+0x1c): undefined reference to `main'\n"}
+[0.702546] (photon_flight_servo_imu) StderrLine: {'line': b"/usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x20): undefined reference to `main'\n"}
+[0.702956] (-) TimerEvent: {}
+[0.708870] (photon_flight_servo_imu) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[0.713118] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imu_reader.dir/build.make:174: imu_reader] Error 1\n'}
+[0.713807] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_reader.dir/all] Error 2\n'}
+[0.714095] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.803139] (-) TimerEvent: {}
+[0.903755] (-) TimerEvent: {}
+[1.004321] (-) TimerEvent: {}
+[1.104918] (-) TimerEvent: {}
+[1.205538] (-) TimerEvent: {}
+[1.306128] (-) TimerEvent: {}
+[1.406750] (-) TimerEvent: {}
+[1.507353] (-) TimerEvent: {}
+[1.608032] (-) TimerEvent: {}
+[1.708662] (-) TimerEvent: {}
+[1.809247] (-) TimerEvent: {}
+[1.909885] (-) TimerEvent: {}
+[2.010490] (-) TimerEvent: {}
+[2.111078] (-) TimerEvent: {}
+[2.211700] (-) TimerEvent: {}
+[2.312290] (-) TimerEvent: {}
+[2.412902] (-) TimerEvent: {}
+[2.513543] (-) TimerEvent: {}
+[2.614121] (-) TimerEvent: {}
+[2.714740] (-) TimerEvent: {}
+[2.815300] (-) TimerEvent: {}
+[2.915936] (-) TimerEvent: {}
+[3.016561] (-) TimerEvent: {}
+[3.117188] (-) TimerEvent: {}
+[3.217985] (-) TimerEvent: {}
+[3.318614] (-) TimerEvent: {}
+[3.419187] (-) TimerEvent: {}
+[3.519812] (-) TimerEvent: {}
+[3.620447] (-) TimerEvent: {}
+[3.721031] (-) TimerEvent: {}
+[3.821714] (-) TimerEvent: {}
+[3.922300] (-) TimerEvent: {}
+[4.022911] (-) TimerEvent: {}
+[4.123514] (-) TimerEvent: {}
+[4.224100] (-) TimerEvent: {}
+[4.324710] (-) TimerEvent: {}
+[4.425288] (-) TimerEvent: {}
+[4.525881] (-) TimerEvent: {}
+[4.626520] (-) TimerEvent: {}
+[4.727248] (-) TimerEvent: {}
+[4.827887] (-) TimerEvent: {}
+[4.928491] (-) TimerEvent: {}
+[5.029102] (-) TimerEvent: {}
+[5.129720] (-) TimerEvent: {}
+[5.230290] (-) TimerEvent: {}
+[5.330893] (-) TimerEvent: {}
+[5.431548] (-) TimerEvent: {}
+[5.532135] (-) TimerEvent: {}
+[5.632787] (-) TimerEvent: {}
+[5.733368] (-) TimerEvent: {}
+[5.834009] (-) TimerEvent: {}
+[5.934661] (-) TimerEvent: {}
+[6.035301] (-) TimerEvent: {}
+[6.136006] (-) TimerEvent: {}
+[6.236614] (-) TimerEvent: {}
+[6.337177] (-) TimerEvent: {}
+[6.437799] (-) TimerEvent: {}
+[6.538434] (-) TimerEvent: {}
+[6.639017] (-) TimerEvent: {}
+[6.739644] (-) TimerEvent: {}
+[6.840228] (-) TimerEvent: {}
+[6.940890] (-) TimerEvent: {}
+[7.041504] (-) TimerEvent: {}
+[7.142090] (-) TimerEvent: {}
+[7.242716] (-) TimerEvent: {}
+[7.343297] (-) TimerEvent: {}
+[7.443963] (-) TimerEvent: {}
+[7.544540] (-) TimerEvent: {}
+[7.645159] (-) TimerEvent: {}
+[7.745788] (-) TimerEvent: {}
+[7.846425] (-) TimerEvent: {}
+[7.947011] (-) TimerEvent: {}
+[8.047616] (-) TimerEvent: {}
+[8.148193] (-) TimerEvent: {}
+[8.248818] (-) TimerEvent: {}
+[8.349428] (-) TimerEvent: {}
+[8.450008] (-) TimerEvent: {}
+[8.550612] (-) TimerEvent: {}
+[8.651235] (-) TimerEvent: {}
+[8.751857] (-) TimerEvent: {}
+[8.852485] (-) TimerEvent: {}
+[8.953100] (-) TimerEvent: {}
+[9.053758] (-) TimerEvent: {}
+[9.154339] (-) TimerEvent: {}
+[9.255011] (-) TimerEvent: {}
+[9.355630] (-) TimerEvent: {}
+[9.456251] (-) TimerEvent: {}
+[9.556871] (-) TimerEvent: {}
+[9.657499] (-) TimerEvent: {}
+[9.758075] (-) TimerEvent: {}
+[9.858746] (-) TimerEvent: {}
+[9.959321] (-) TimerEvent: {}
+[10.059935] (-) TimerEvent: {}
+[10.160513] (-) TimerEvent: {}
+[10.261084] (-) TimerEvent: {}
+[10.361742] (-) TimerEvent: {}
+[10.462322] (-) TimerEvent: {}
+[10.562971] (-) TimerEvent: {}
+[10.663556] (-) TimerEvent: {}
+[10.764130] (-) TimerEvent: {}
+[10.864749] (-) TimerEvent: {}
+[10.965307] (-) TimerEvent: {}
+[11.065957] (-) TimerEvent: {}
+[11.166561] (-) TimerEvent: {}
+[11.267114] (-) TimerEvent: {}
+[11.367718] (-) TimerEvent: {}
+[11.468297] (-) TimerEvent: {}
+[11.568943] (-) TimerEvent: {}
+[11.669694] (-) TimerEvent: {}
+[11.770276] (-) TimerEvent: {}
+[11.870926] (-) TimerEvent: {}
+[11.971542] (-) TimerEvent: {}
+[12.072121] (-) TimerEvent: {}
+[12.172747] (-) TimerEvent: {}
+[12.273363] (-) TimerEvent: {}
+[12.374007] (-) TimerEvent: {}
+[12.474631] (-) TimerEvent: {}
+[12.575237] (-) TimerEvent: {}
+[12.676055] (-) TimerEvent: {}
+[12.776792] (-) TimerEvent: {}
+[12.877460] (-) TimerEvent: {}
+[12.978076] (-) TimerEvent: {}
+[13.078685] (-) TimerEvent: {}
+[13.179274] (-) TimerEvent: {}
+[13.279894] (-) TimerEvent: {}
+[13.380503] (-) TimerEvent: {}
+[13.481118] (-) TimerEvent: {}
+[13.581719] (-) TimerEvent: {}
+[13.682315] (-) TimerEvent: {}
+[13.782926] (-) TimerEvent: {}
+[13.883534] (-) TimerEvent: {}
+[13.984074] (-) TimerEvent: {}
+[14.084729] (-) TimerEvent: {}
+[14.185688] (-) TimerEvent: {}
+[14.286337] (-) TimerEvent: {}
+[14.386966] (-) TimerEvent: {}
+[14.487547] (-) TimerEvent: {}
+[14.588135] (-) TimerEvent: {}
+[14.688792] (-) TimerEvent: {}
+[14.789423] (-) TimerEvent: {}
+[14.890136] (-) TimerEvent: {}
+[14.990750] (-) TimerEvent: {}
+[15.013024] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 75%] \x1b[1m\x1b[32mLinking CXX executable servo_driver\x1b[0m\n'}
+[15.091001] (-) TimerEvent: {}
+[15.191832] (-) TimerEvent: {}
+[15.292848] (-) TimerEvent: {}
+[15.393565] (-) TimerEvent: {}
+[15.494193] (-) TimerEvent: {}
+[15.521905] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 75%] Built target servo_driver\n'}
+[15.525334] (photon_flight_servo_imu) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.531948] (photon_flight_servo_imu) CommandEnded: {'returncode': 2}
+[15.568001] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 2}
+[15.579749] (-) EventReactorShutdown: {}

@@ -1,0 +1,39 @@
+[0.037s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu
+[0.061s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.062s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.062s]   CMake.
+[0.062s] 
+[0.062s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.063s]   to tell CMake that the project requires at least <min> but has been updated
+[0.063s]   to work with policies introduced by <max> or earlier.
+[0.063s] 
+[0.063s] [0m
+[0.251s] -- The C compiler identification is GNU 15.2.0
+[0.498s] -- The CXX compiler identification is GNU 15.2.0
+[0.522s] -- Detecting C compiler ABI info
+[0.793s] -- Detecting C compiler ABI info - done
+[0.845s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.846s] -- Detecting C compile features
+[0.848s] -- Detecting C compile features - done
+[0.889s] -- Detecting CXX compiler ABI info
+[1.185s] -- Detecting CXX compiler ABI info - done
+[1.238s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.239s] -- Detecting CXX compile features
+[1.241s] -- Detecting CXX compile features - done
+[1.269s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[2.134s] -- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+[2.219s] -- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+[2.243s] -- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+[2.283s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.321s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.516s] -- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+[2.523s] -- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)
+[2.614s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.822s] -- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+[2.864s] -- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+[2.979s] [31mCMake Error at CMakeLists.txt:22 (ament_target_dependencies):
+[2.980s]   Unknown CMake command "ament_target_dependencies".
+[2.980s] 
+[2.980s] [0m
+[2.980s] -- Configuring incomplete, errors occurred!
+[3.000s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '1': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu

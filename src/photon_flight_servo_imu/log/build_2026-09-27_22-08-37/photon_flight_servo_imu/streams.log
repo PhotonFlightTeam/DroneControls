@@ -1,0 +1,61 @@
+[0.038s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu
+[0.064s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.065s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.065s]   CMake.
+[0.065s] 
+[0.065s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.066s]   to tell CMake that the project requires at least <min> but has been updated
+[0.066s]   to work with policies introduced by <max> or earlier.
+[0.066s] 
+[0.066s] [0m
+[0.084s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.848s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.868s] -- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+[0.927s] -- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+[0.942s] -- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+[0.969s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.998s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.167s] -- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+[1.171s] -- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)
+[1.246s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.434s] -- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+[1.474s] -- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+[1.591s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[2.045s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.045s] -- Configured cppcheck include dirs: 
+[2.045s] -- Configured cppcheck exclude dirs and/or files: 
+[2.050s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.050s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.057s] -- Added test 'lint_cmake' to check CMake code style
+[2.062s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.083s] -- Added test 'uncrustify' to check C / C++ code style
+[2.083s] -- Configured uncrustify additional arguments: 
+[2.087s] -- Added test 'xmllint' to check XML markup files
+[2.093s] -- Configuring done (2.0s)
+[2.152s] -- Generating done (0.1s)
+[2.249s] -- Build files have been written to: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu
+[2.267s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu
+[2.271s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4
+[2.424s] [ 50%] [32mBuilding CXX object CMakeFiles/imu_reader.dir/src/imucapture.cpp.o[0m
+[2.425s] [ 50%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servodriver.cpp.o[0m
+[2.503s] [ 75%] [1m[32mLinking CXX executable imu_reader[0m
+[2.554s] /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find -lsensor_msgs:sensor_msgs: No such file or directory
+[2.614s] collect2: error: ld returned 1 exit status
+[2.619s] gmake[2]: *** [CMakeFiles/imu_reader.dir/build.make:176: imu_reader] Error 1
+[2.619s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_reader.dir/all] Error 2
+[2.619s] gmake[1]: *** Waiting for unfinished jobs....
+[11.132s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:[m[K In constructor ‘[01m[KServoDriverNode::[01;32m[KServoDriverNode[m[K()[m[K’:
+[11.132s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:34:12:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_ERROR[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_ERROR[m[K’?
+[11.132s]    34 |            [01;31m[KRCLPP_ERROR[m[K(this->get_logger(), "GPIO FAILED TO OPEN");
+[11.133s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[11.133s]       |            [32m[KRCLCPP_ERROR[m[K
+[11.133s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:49:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[11.133s]    49 |         [01;31m[K)[m[K;
+[11.134s]       |         [01;31m[K^[m[K
+[11.134s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:55:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[11.134s]    55 |             [01;31m[K50ms[m[K, std::bind(&ServoDriverNode::update_angle_callback, this)
+[11.135s]       |             [01;31m[K^~~~[m[K
+[16.312s] gmake[2]: *** [CMakeFiles/servo_driver.dir/build.make:79: CMakeFiles/servo_driver.dir/src/servodriver.cpp.o] Error 1
+[16.312s] gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/servo_driver.dir/all] Error 2
+[16.312s] gmake: *** [Makefile:146: all] Error 2
+[16.319s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4

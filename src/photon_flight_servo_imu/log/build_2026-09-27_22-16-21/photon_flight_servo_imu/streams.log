@@ -1,0 +1,16 @@
+[0.038s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4
+[0.196s] [ 25%] [1m[32mLinking CXX executable imu_reader[0m
+[0.232s] [ 50%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servodriver.cpp.o[0m
+[0.248s] /usr/bin/aarch64-linux-gnu-ld.bfd: cannot find -lsensor_msgs:sensor_msgs: No such file or directory
+[0.313s] collect2: error: ld returned 1 exit status
+[0.318s] gmake[2]: *** [CMakeFiles/imu_reader.dir/build.make:176: imu_reader] Error 1
+[0.318s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_reader.dir/all] Error 2
+[0.318s] gmake[1]: *** Waiting for unfinished jobs....
+[8.862s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:[m[K In constructor ‘[01m[KServoDriverNode::[01;32m[KServoDriverNode[m[K()[m[K’:
+[8.863s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:55:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[8.863s]    55 |             [01;31m[K50ms[m[K, std::bind(&ServoDriverNode::update_angle_callback, this)
+[8.863s]       |             [01;31m[K^~~~[m[K
+[14.030s] gmake[2]: *** [CMakeFiles/servo_driver.dir/build.make:79: CMakeFiles/servo_driver.dir/src/servodriver.cpp.o] Error 1
+[14.030s] gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/servo_driver.dir/all] Error 2
+[14.031s] gmake: *** [Makefile:146: all] Error 2
+[14.038s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4

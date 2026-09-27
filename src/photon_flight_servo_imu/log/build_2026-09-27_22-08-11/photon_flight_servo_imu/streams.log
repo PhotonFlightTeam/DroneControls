@@ -1,0 +1,29 @@
+[0.037s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu
+[0.066s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.066s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.067s]   CMake.
+[0.067s] 
+[0.067s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.067s]   to tell CMake that the project requires at least <min> but has been updated
+[0.067s]   to work with policies introduced by <max> or earlier.
+[0.068s] 
+[0.068s] [0m
+[0.086s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.847s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.869s] -- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+[0.927s] -- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+[0.941s] -- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+[0.968s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.996s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.162s] -- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+[1.166s] -- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)
+[1.240s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.425s] -- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+[1.464s] -- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+[1.576s] [31mCMake Error at CMakeLists.txt:34 (target_link_libraries):
+[1.577s]   Cannot specify link libraries for target "servodriver" which is not built
+[1.577s]   by this project.
+[1.577s] 
+[1.577s] [0m
+[1.577s] -- Configuring incomplete, errors occurred!
+[1.595s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '1': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/punished_venom/DroneControls/src/photon_flight_servo_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/punished_venom/DroneControls/src/photon_flight_servo_imu/install/photon_flight_servo_imu

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/punished_venom/DroneControls/src/rplidar_ros" FILES "/home/punished_venom/DroneControls/build/rplidar_ros/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rplidar_ros" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

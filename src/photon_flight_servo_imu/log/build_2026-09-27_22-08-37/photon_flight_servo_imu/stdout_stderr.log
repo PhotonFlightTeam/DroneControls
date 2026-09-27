@@ -1,0 +1,57 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_reader.dir/src/imucapture.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servodriver.cpp.o[0m
+[ 75%] [1m[32mLinking CXX executable imu_reader[0m
+/usr/bin/aarch64-linux-gnu-ld.bfd: cannot find -lsensor_msgs:sensor_msgs: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/imu_reader.dir/build.make:176: imu_reader] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_reader.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:[m[K In constructor ‘[01m[KServoDriverNode::[01;32m[KServoDriverNode[m[K()[m[K’:
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:34:12:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_ERROR[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_ERROR[m[K’?
+   34 |            [01;31m[KRCLPP_ERROR[m[K(this->get_logger(), "GPIO FAILED TO OPEN");
+      |            [01;31m[K^~~~~~~~~~~[m[K
+      |            [32m[KRCLCPP_ERROR[m[K
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:49:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   49 |         [01;31m[K)[m[K;
+      |         [01;31m[K^[m[K
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/servodriver.cpp:55:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   55 |             [01;31m[K50ms[m[K, std::bind(&ServoDriverNode::update_angle_callback, this)
+      |             [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/servo_driver.dir/build.make:79: CMakeFiles/servo_driver.dir/src/servodriver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/servo_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,2 @@
+Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4
+Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4

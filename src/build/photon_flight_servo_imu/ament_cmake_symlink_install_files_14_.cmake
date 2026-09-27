@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/punished_venom/DroneControls/src/photon_flight_servo_imu" FILES "/home/punished_venom/DroneControls/src/photon_flight_servo_imu/package.xml" "DESTINATION" "share/photon_flight_servo_imu")

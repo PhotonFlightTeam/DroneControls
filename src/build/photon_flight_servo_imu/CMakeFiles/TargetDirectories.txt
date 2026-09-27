@@ -1,9 +1,0 @@
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/uninstall.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/photon_flight_servo_imu_uninstall.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/test.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/edit_cache.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/rebuild_cache.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/list_install_components.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/install.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/install/local.dir
-/home/punished_venom/DroneControls/src/build/photon_flight_servo_imu/CMakeFiles/install/strip.dir

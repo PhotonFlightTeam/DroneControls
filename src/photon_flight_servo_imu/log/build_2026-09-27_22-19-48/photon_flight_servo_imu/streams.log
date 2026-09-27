@@ -1,0 +1,14 @@
+[0.037s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4
+[0.203s] [ 25%] [1m[32mLinking CXX executable imu_reader[0m
+[0.235s] [ 50%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servodriver.cpp.o[0m
+[0.699s] /usr/bin/aarch64-linux-gnu-ld.bfd: /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[0.700s] (.text+0x1c): undefined reference to `main'
+[0.700s] /usr/bin/aarch64-linux-gnu-ld.bfd: (.text+0x20): undefined reference to `main'
+[0.707s] collect2: error: ld returned 1 exit status
+[0.711s] gmake[2]: *** [CMakeFiles/imu_reader.dir/build.make:174: imu_reader] Error 1
+[0.712s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_reader.dir/all] Error 2
+[0.712s] gmake[1]: *** Waiting for unfinished jobs....
+[15.011s] [ 75%] [1m[32mLinking CXX executable servo_driver[0m
+[15.520s] [ 75%] Built target servo_driver
+[15.523s] gmake: *** [Makefile:146: all] Error 2
+[15.530s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu' returned '2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu -- -j4 -l4

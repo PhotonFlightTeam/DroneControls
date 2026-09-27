@@ -1,1 +1,0 @@
-/home/punished_venom/DroneControls/src/rplidar_ros/launch/rplidar_a3_launch.py

@@ -1,1 +1,0 @@
-/home/punished_venom/DroneControls/build/photon_flight_liDAR_Collection/ament_cmake_environment_hooks/local_setup.sh

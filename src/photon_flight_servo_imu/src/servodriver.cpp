@@ -16,6 +16,7 @@ https://raspberrypi.stackexchange.com/questions/119440/how-to-control-a-servo-vi
 
 I'm leaving alot of comments because I have never used ros2 or this library before
 */
+using namespace std::chrono_literals;
 
 class ServoDriverNode : public rclcpp::Node 
 {
@@ -31,7 +32,7 @@ class ServoDriverNode : public rclcpp::Node
        //opens gpio device 
        default_gpio = lgGpiochipOpen(0);
        if (default_gpio < 0) {
-           RCLPP_ERROR(this->get_logger(), "GPIO FAILED TO OPEN");
+           RCLCPP_ERROR(this->get_logger(), "GPIO FAILED TO OPEN");
            return;
         }
         // NOTE: Pi 4B PWM pins; 12, 13, 18 and 19
@@ -45,7 +46,7 @@ class ServoDriverNode : public rclcpp::Node
             // pin we're claiming for output
             servo_pin,
             // starts the pin at LOW when claimed
-            0,
+            0
         );
         
         RCLCPP_INFO(this->get_logger(), "Servo pin set at %d", servo_pin); 
@@ -54,10 +55,6 @@ class ServoDriverNode : public rclcpp::Node
         timer_ = this->create_wall_timer(
             50ms, std::bind(&ServoDriverNode::update_angle_callback, this)
         );
-        /*
-        shared_ptrs are smart pointers that share ownership of one or multiple objects, specifically here it manages
-        the timer object we created earlier this allows multiple parts of our program to share the timer safely
-        */
     }
     
     ~ServoDriverNode() 
@@ -66,7 +63,7 @@ class ServoDriverNode : public rclcpp::Node
             lgGpiochipClose(default_gpio);
         }
     }
-
+    
     private:
     void update_angle_callback()
     {
@@ -76,10 +73,10 @@ class ServoDriverNode : public rclcpp::Node
         500 = 0 degrees 
         2500 = 180 degrees
         */
-
-        if (pulse_width <= 500) {
-            pulse_width = 500; 
-            direction = 50;
+       
+       if (pulse_width <= 500) {
+           pulse_width = 500; 
+           direction = 50;
         } else if (pulse_width >= 2500) {
             pulse_width = 2500;
             direction = -50;
@@ -89,8 +86,12 @@ class ServoDriverNode : public rclcpp::Node
     int direction;
     int default_gpio;
     int servo_pin;
+    /*
+    shared_ptrs are smart pointers that share ownership of one or multiple objects, specifically here it manages
+    the timer object we created earlier this allows multiple parts of our program to share the timer safely
+    */
     rclcpp::TimerBase::SharedPtr timer_;
-        
+    
 };
 
 int main(int argc, char* argv[])
