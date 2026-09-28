@@ -81,11 +81,16 @@ class ServoDriverNode : public rclcpp::Node
             pulse_width = 2500;
             direction = -50;
         }
+    double duty_cycle = (static_cast<double>(pulse_width) / 20000.0) * 100.0;
+    lgTxPwm(default_gpio, servo_pin, 50.0f, duty_cycle, 0, 0);
     }
+    
     int pulse_width;
     int direction;
     int default_gpio;
     int servo_pin;
+
+    
     /*
     shared_ptrs are smart pointers that share ownership of one or multiple objects, specifically here it manages
     the timer object we created earlier this allows multiple parts of our program to share the timer safely
