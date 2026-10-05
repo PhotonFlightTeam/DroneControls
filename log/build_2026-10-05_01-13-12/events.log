@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.000624] (-) JobUnselected: {'identifier': 'photon_flight_camera'}
+[0.001034] (-) JobUnselected: {'identifier': 'photon_flight_internet'}
+[0.001099] (-) JobUnselected: {'identifier': 'photon_flight_pix'}
+[0.001152] (-) JobUnselected: {'identifier': 'photon_flight_servo_imu'}
+[0.001203] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001264] (photon_flight_database_3D) JobQueued: {'identifier': 'photon_flight_database_3D', 'dependencies': OrderedDict()}
+[0.002033] (photon_flight_database_3D) JobStarted: {'identifier': 'photon_flight_database_3D'}
+[0.099346] (-) TimerEvent: {}
+[0.200256] (-) TimerEvent: {}
+[0.300908] (-) TimerEvent: {}
+[0.401476] (-) TimerEvent: {}
+[0.501991] (-) TimerEvent: {}
+[0.602551] (-) TimerEvent: {}
+[0.703053] (-) TimerEvent: {}
+[0.803568] (-) TimerEvent: {}
+[0.904139] (-) TimerEvent: {}
+[1.004940] (-) TimerEvent: {}
+[1.105707] (-) TimerEvent: {}
+[1.206483] (-) TimerEvent: {}
+[1.307155] (-) TimerEvent: {}
+[1.407680] (-) TimerEvent: {}
+[1.508219] (-) TimerEvent: {}
+[1.608735] (-) TimerEvent: {}
+[1.709221] (-) TimerEvent: {}
+[1.809756] (-) TimerEvent: {}
+[1.910299] (-) TimerEvent: {}
+[2.010805] (-) TimerEvent: {}
+[2.111284] (-) TimerEvent: {}
+[2.211790] (-) TimerEvent: {}
+[2.312291] (-) TimerEvent: {}
+[2.412777] (-) TimerEvent: {}
+[2.513247] (-) TimerEvent: {}
+[2.613753] (-) TimerEvent: {}
+[2.714377] (-) TimerEvent: {}
+[2.815226] (-) TimerEvent: {}
+[2.915988] (-) TimerEvent: {}
+[3.016599] (-) TimerEvent: {}
+[3.117143] (-) TimerEvent: {}
+[3.217714] (-) TimerEvent: {}
+[3.318198] (-) TimerEvent: {}
+[3.418702] (-) TimerEvent: {}
+[3.519178] (-) TimerEvent: {}
+[3.619680] (-) TimerEvent: {}
+[3.720179] (-) TimerEvent: {}
+[3.820681] (-) TimerEvent: {}
+[3.921302] (-) TimerEvent: {}
+[4.017070] (photon_flight_database_3D) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/punished_venom/DroneControls/build/photon_flight_database_3D/build', '--no-deps', 'symlink_data'], 'cwd': '/home/punished_venom/DroneControls/build/photon_flight_database_3D', 'env': OrderedDict({'USER': 'punished_venom', 'SSH_CLIENT': '100.70.40.23 42068 22', 'GIT_ASKPASS': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass.sh', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'SHLVL': '2', 'BROWSER': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/helpers/browser.sh', 'HOME': '/home/punished_venom', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-909f170c-e1b7-4e5d-97be-2ab4b954cdca.sock', 'TERM_PROGRAM_VERSION': '1.140.0', 'VSCODE_GIT_ASKPASS_MAIN': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_NODE': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/punished_venom/DroneControls/install:/home/punished_venom/DroneControls/src/install', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm', 'XDG_SESSION_ID': '510', 'PATH': '/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/remote-cli:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_INJECTION': '1', 'LANG': 'en_US.UTF-8', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8d4c2b2381.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/punished_venom/DroneControls/src/install/photon_flight_database_3D:/home/punished_venom/DroneControls/src/install/rplidar_ros:/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet:/home/punished_venom/DroneControls/install/photon_flight_db_internet:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/punished_venom/DroneControls/build/photon_flight_database_3D', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.70.40.23 42068 100.71.17.45 22', 'COPILOT_DEBUG_NONCE': 'a30fe9154f7261db0e8da7f1e1d06a3e', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/punished_venom/DroneControls/build/photon_flight_database_3D/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:/home/punished_venom/DroneControls/src/install/photon_flight_database_3D/lib/python3.14/site-packages:/home/punished_venom/DroneControls/install/photon_flight_db_internet/lib/python3.14/site-packages:/home/punished_venom/DroneControls/build/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:/home/punished_venom/DroneControls/build/photon_flight_camera:/home/punished_venom/DroneControls/install/photon_flight_camera/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '/opt/ros/lyrical', 'CMAKE_PREFIX_PATH': '/home/punished_venom/DroneControls/src/install/rplidar_ros:/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet'}), 'shell': False}
+[4.023683] (-) TimerEvent: {}
+[4.124232] (-) TimerEvent: {}
+[4.224826] (-) TimerEvent: {}
+[4.325413] (-) TimerEvent: {}
+[4.425945] (-) TimerEvent: {}
+[4.526460] (-) TimerEvent: {}
+[4.626952] (-) TimerEvent: {}
+[4.727423] (-) TimerEvent: {}
+[4.827895] (-) TimerEvent: {}
+[4.928406] (-) TimerEvent: {}
+[5.028971] (-) TimerEvent: {}
+[5.104508] (photon_flight_database_3D) StdoutLine: {'line': b'running develop\n'}
+[5.129098] (-) TimerEvent: {}
+[5.229609] (-) TimerEvent: {}
+[5.330142] (-) TimerEvent: {}
+[5.430713] (-) TimerEvent: {}
+[5.531192] (-) TimerEvent: {}
+[5.631756] (-) TimerEvent: {}
+[5.714317] (photon_flight_database_3D) StdoutLine: {'line': b'running egg_info\n'}
+[5.731886] (-) TimerEvent: {}
+[5.780473] (photon_flight_database_3D) StdoutLine: {'line': b'writing photon_flight_database_3D.egg-info/PKG-INFO\n'}
+[5.782618] (photon_flight_database_3D) StdoutLine: {'line': b'writing dependency_links to photon_flight_database_3D.egg-info/dependency_links.txt\n'}
+[5.783953] (photon_flight_database_3D) StdoutLine: {'line': b'writing entry points to photon_flight_database_3D.egg-info/entry_points.txt\n'}
+[5.785662] (photon_flight_database_3D) StdoutLine: {'line': b'writing requirements to photon_flight_database_3D.egg-info/requires.txt\n'}
+[5.786816] (photon_flight_database_3D) StdoutLine: {'line': b'writing top-level names to photon_flight_database_3D.egg-info/top_level.txt\n'}
+[5.832024] (-) TimerEvent: {}
+[5.919913] (photon_flight_database_3D) StdoutLine: {'line': b"reading manifest file 'photon_flight_database_3D.egg-info/SOURCES.txt'\n"}
+[5.923615] (photon_flight_database_3D) StdoutLine: {'line': b"writing manifest file 'photon_flight_database_3D.egg-info/SOURCES.txt'\n"}
+[5.932154] (-) TimerEvent: {}
+[5.993309] (photon_flight_database_3D) StdoutLine: {'line': b'running build_ext\n'}
+[5.993949] (photon_flight_database_3D) StdoutLine: {'line': b'Creating /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon-flight-database-3D.egg-link (link to .)\n'}
+[5.996446] (photon_flight_database_3D) StdoutLine: {'line': b'Installing lidar_subscriber script to /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/photon_flight_database_3D\n'}
+[5.997540] (photon_flight_database_3D) StdoutLine: {'line': b'\n'}
+[5.997961] (photon_flight_database_3D) StdoutLine: {'line': b'Installed /home/punished_venom/DroneControls/build/photon_flight_database_3D\n'}
+[5.998206] (photon_flight_database_3D) StdoutLine: {'line': b'running symlink_data\n'}
+[6.032427] (-) TimerEvent: {}
+[6.133202] (-) TimerEvent: {}
+[6.180358] (photon_flight_database_3D) CommandEnded: {'returncode': 0}
+[6.234029] (-) TimerEvent: {}
+[6.236347] (photon_flight_database_3D) JobEnded: {'identifier': 'photon_flight_database_3D', 'rc': 0}
+[6.238710] (-) EventReactorShutdown: {}

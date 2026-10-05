@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'photon_flight_db_internet'
+package_name = 'photon_flight_database_3D'
 
 setup(
     name=package_name,
@@ -14,8 +14,8 @@ setup(
     package_data={'': ['py.typed']},
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='punished_venom',
-    maintainer_email='punished_venom@todo.todo',
+    maintainer='FreeCharles02',
+    maintainer_email='charleskolb02@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -25,6 +25,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+           'lidar_subscriber = photon_flight_database_3D.LiDARSubscriber:main',
         ],
     },
 )
