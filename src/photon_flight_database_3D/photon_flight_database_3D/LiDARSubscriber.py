@@ -4,7 +4,7 @@ import numpy as np
 import math
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import String
-
+import os
 
 class LiDARSubscriber(Node):
 
@@ -16,7 +16,8 @@ class LiDARSubscriber(Node):
             '/scan',
             self.lidar_listener_callback,
             10)
-        self.subscription  
+        self.subscription 
+        scan_matrix = np.array() 
       
     def lidar_listener_callback(self, msg):
         
@@ -30,8 +31,9 @@ class LiDARSubscriber(Node):
 
             valid_ranges = ranges[valid_mask]
             valid_angles = angles[valid_mask]
+            
 
-            scan_matrix = np.column_stack((valid_angles, valid_ranges)) #stack into matrix
+           self.scan_matrix = np.column_stack((valid_angles, valid_ranges)) #stack into matrix
 
             if len(scan_matrix) > 0:
                 self.get_logger().info(f"Matrix shape: {scan_matrix.shape} (Valid points: {len(scan_matrix)})")
@@ -40,7 +42,15 @@ class LiDARSubscriber(Node):
             first_radius = scan_matrix[0, 1]
             self.get_logger().info(f"First point -> Angle: {math.degrees(first_angle):.2f}°, Radius: {first_radius:.2f}m")
 
-            
+    def save_shutdown():
+        file_append_num = 0
+        file_name = "2D_Flight_Matrix_" + str(file_append_num)
+
+        while os.path.exists(file_name):
+            file_append_num += 1 
+            file_name = "2D_Flight_Matrix_" + str(file_append_num)
+
+        np.save(file_name, scan_matrix, allow_pickle=True) 
 
 
 

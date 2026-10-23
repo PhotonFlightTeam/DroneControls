@@ -1,0 +1,7 @@
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/imucapture.cpp:[m[K In member function ‘[01m[Kvoid IMUPublisher::[01;32m[Kimu_callback[m[K()[m[K’:
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/imucapture.cpp:136:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwake[m[K’ was not declared in this scope
+  136 |         [01;31m[Kwake[m[K();
+      |         [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/imu_publisher_node.dir/build.make:79: CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_publisher_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

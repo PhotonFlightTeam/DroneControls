@@ -1,0 +1,36 @@
+[5.998s] Invoking command in '/home/punished_venom/DroneControls/build/photon_flight_database_3D': PYTHONPATH=/home/punished_venom/DroneControls/build/photon_flight_database_3D/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/punished_venom/DroneControls/build/photon_flight_database_3D/build
+[8.893s] running develop
+[10.728s] Removing /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon-flight-database-3D.egg-link (link to .)
+[11.024s] Invoked command in '/home/punished_venom/DroneControls/build/photon_flight_database_3D' returned '0': PYTHONPATH=/home/punished_venom/DroneControls/build/photon_flight_database_3D/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/punished_venom/DroneControls/build/photon_flight_database_3D/build
+[11.027s] Invoking command in '/home/punished_venom/DroneControls/src/photon_flight_database_3D': PYTHONPATH=/home/punished_venom/DroneControls/build/photon_flight_database_3D/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/photon_flight_database_3D build --build-base /home/punished_venom/DroneControls/build/photon_flight_database_3D/build install --record /home/punished_venom/DroneControls/build/photon_flight_database_3D/install.log --install-scripts $base/lib/photon_flight_database_3D --single-version-externally-managed install_data --force
+[13.274s] running egg_info
+[13.394s] writing ../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info/PKG-INFO
+[13.396s] writing dependency_links to ../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info/dependency_links.txt
+[13.399s] writing entry points to ../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info/entry_points.txt
+[13.400s] writing requirements to ../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info/requires.txt
+[13.401s] writing top-level names to ../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info/top_level.txt
+[13.699s] reading manifest file '../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info/SOURCES.txt'
+[13.704s] writing manifest file '../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info/SOURCES.txt'
+[13.705s] running build
+[13.706s] running build_py
+[13.706s] creating /home/punished_venom/DroneControls/build/photon_flight_database_3D/build/lib/photon_flight_database_3D
+[13.712s] copying photon_flight_database_3D/__init__.py -> /home/punished_venom/DroneControls/build/photon_flight_database_3D/build/lib/photon_flight_database_3D
+[13.712s] copying photon_flight_database_3D/LiDARSubscriber.py -> /home/punished_venom/DroneControls/build/photon_flight_database_3D/build/lib/photon_flight_database_3D
+[13.713s] copying photon_flight_database_3D/py.typed -> /home/punished_venom/DroneControls/build/photon_flight_database_3D/build/lib/photon_flight_database_3D
+[13.714s] running install
+[13.747s] running install_lib
+[13.876s] creating /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon_flight_database_3D
+[13.878s] copying /home/punished_venom/DroneControls/build/photon_flight_database_3D/build/lib/photon_flight_database_3D/__init__.py -> /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon_flight_database_3D
+[13.880s] copying /home/punished_venom/DroneControls/build/photon_flight_database_3D/build/lib/photon_flight_database_3D/py.typed -> /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon_flight_database_3D
+[13.882s] copying /home/punished_venom/DroneControls/build/photon_flight_database_3D/build/lib/photon_flight_database_3D/LiDARSubscriber.py -> /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon_flight_database_3D
+[13.886s] byte-compiling /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon_flight_database_3D/__init__.py to __init__.cpython-314.pyc
+[13.889s] byte-compiling /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon_flight_database_3D/LiDARSubscriber.py to LiDARSubscriber.cpython-314.pyc
+[13.893s] running install_data
+[13.896s] copying resource/photon_flight_database_3D -> /home/punished_venom/DroneControls/install/photon_flight_database_3D/share/ament_index/resource_index/packages
+[13.898s] copying package.xml -> /home/punished_venom/DroneControls/install/photon_flight_database_3D/share/photon_flight_database_3D
+[13.900s] running install_egg_info
+[14.046s] Copying ../../build/photon_flight_database_3D/photon_flight_database_3D.egg-info to /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages/photon_flight_database_3D-0.0.0-py3.14.egg-info
+[14.057s] running install_scripts
+[14.766s] Installing lidar_subscriber script to /home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/photon_flight_database_3D
+[14.767s] writing list of installed files to '/home/punished_venom/DroneControls/build/photon_flight_database_3D/install.log'
+[15.019s] Invoked command in '/home/punished_venom/DroneControls/src/photon_flight_database_3D' returned '0': PYTHONPATH=/home/punished_venom/DroneControls/build/photon_flight_database_3D/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/photon_flight_database_3D build --build-base /home/punished_venom/DroneControls/build/photon_flight_database_3D/build install --record /home/punished_venom/DroneControls/build/photon_flight_database_3D/install.log --install-scripts $base/lib/photon_flight_database_3D --single-version-externally-managed install_data --force

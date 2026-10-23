@@ -1,0 +1,16 @@
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/ament_index/resource_index/package_run_dependencies/photon_flight_pix
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/ament_index/resource_index/parent_prefix_path/photon_flight_pix
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/environment/ament_prefix_path.sh
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/environment/ament_prefix_path.dsv
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/environment/path.sh
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/environment/path.dsv
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/local_setup.bash
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/local_setup.fish
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/local_setup.sh
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/local_setup.zsh
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/local_setup.dsv
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/package.dsv
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/ament_index/resource_index/packages/photon_flight_pix
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/cmake/photon_flight_pixConfig.cmake
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/cmake/photon_flight_pixConfig-version.cmake
+/home/punished_venom/DroneControls/install/photon_flight_pix/share/photon_flight_pix/package.xml

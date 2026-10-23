@@ -1,0 +1,5 @@
+source;share/photon_flight_internet/local_setup.bash
+source;share/photon_flight_internet/local_setup.dsv
+source;share/photon_flight_internet/local_setup.fish
+source;share/photon_flight_internet/local_setup.sh
+source;share/photon_flight_internet/local_setup.zsh

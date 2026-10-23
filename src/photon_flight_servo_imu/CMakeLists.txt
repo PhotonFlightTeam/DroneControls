@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(photon_flight_servo_imu)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
+add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
 # find dependencies
@@ -17,38 +17,59 @@ find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 add_executable(servo_driver src/servodriver.cpp)
+add_executable(imu_publisher_node src/imucapture.cpp)
+add_executable(gps_listener src/gpscapture.cpp)
 #add_executable(imu_reader src/imucapture.cpp)
 
 target_link_libraries(servo_driver
-  rclcpp::rclcpp
-  std_msgs::std_msgs__rosidl_generator_c
-  std_msgs::std_msgs__rosidl_typesupport_cpp
-  sensor_msgs::sensor_msgs__rosidl_generator_c
-  sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
-  lgpio
+rclcpp::rclcpp
+std_msgs::std_msgs__rosidl_generator_c
+std_msgs::std_msgs__rosidl_typesupport_cpp
+sensor_msgs::sensor_msgs__rosidl_generator_c
+sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
+lgpio
 )
 
-#target_link_libraries(imu_reader
- 
-#  rclcpp::rclcpp
-#  std_msgs::std_msgs__rosidl_generator_c
-#  std_msgs::std_msgs__rosidl_typesupport_cpp
-#  sensor_msgs::sensor_msgs__rosidl_generator_c
-#  sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
-# )
+
+target_link_libraries(imu_publisher_node
+rclcpp::rclcpp
+std_msgs::std_msgs__rosidl_generator_c
+std_msgs::std_msgs__rosidl_typesupport_cpp
+sensor_msgs::sensor_msgs__rosidl_generator_c
+sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
+lgpio
+)
+
+target_link_libraries(gps_listener
+rclcpp::rclcpp
+std_msgs::std_msgs__rosidl_generator_c
+std_msgs::std_msgs__rosidl_typesupport_cpp
+sensor_msgs::sensor_msgs__rosidl_generator_c
+sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
+lgpio
+)
 
 target_link_libraries(servo_driver lgpio)
 
+install(TARGETS 
+gps_listener
+DESTINATION lib/${PROJECT_NAME}
+)
 install(TARGETS
-  servo_driver
-  DESTINATION lib/${PROJECT_NAME}
+servo_driver
+DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS
+imu_publisher_node
+DESTINATION lib/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
+find_package(ament_lint_auto REQUIRED)
+# the following line skips the linter which checks for copyrights
+# comment the line when a copyright and license is added to all source files
+set(ament_cmake_copyright_FOUND TRUE)
   # the following line skips cpplint (only works in a git repo)
   # comment the line when this package is in a git repo and when
   # a copyright and license is added to all source files

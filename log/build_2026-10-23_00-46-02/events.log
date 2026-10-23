@@ -1,0 +1,328 @@
+[0.000000] (-) TimerEvent: {}
+[0.001102] (-) JobUnselected: {'identifier': 'photon_flight_camera'}
+[0.001445] (-) JobUnselected: {'identifier': 'photon_flight_database_3D'}
+[0.002268] (-) JobUnselected: {'identifier': 'photon_flight_internet'}
+[0.002761] (-) JobUnselected: {'identifier': 'photon_flight_pix'}
+[0.003225] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.003424] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.003653] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.037129] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[0.039577] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'build'}
+[0.041600] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'env': OrderedDict({'SSH_CLIENT': '100.70.40.23 36480 22', 'USER': 'punished_venom', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass.sh', 'BROWSER': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/helpers/browser.sh', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'SHLVL': '2', 'HOME': '/home/punished_venom', 'TERM_PROGRAM_VERSION': '1.140.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bd5e59db-cab4-48f5-a7f5-369f596bc70d.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '191', 'TERM': 'xterm', 'PATH': '/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/remote-cli:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VSCODE_INJECTION': '1', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-73df9b45ae.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '101', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '59405ed4f32c9ef70fe7d1d584ad673b', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '100.70.40.23 36480 100.71.17.45 22', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[0.099374] (-) TimerEvent: {}
+[0.146186] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)\n'}
+[0.199524] (-) TimerEvent: {}
+[0.300346] (-) TimerEvent: {}
+[0.401356] (-) TimerEvent: {}
+[0.502483] (-) TimerEvent: {}
+[0.603188] (-) TimerEvent: {}
+[0.703786] (-) TimerEvent: {}
+[0.804377] (-) TimerEvent: {}
+[0.905038] (-) TimerEvent: {}
+[1.005736] (-) TimerEvent: {}
+[1.063928] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)\n'}
+[1.105844] (-) TimerEvent: {}
+[1.146586] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)\n'}
+[1.166412] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)\n'}
+[1.202780] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.205999] (-) TimerEvent: {}
+[1.241319] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.306187] (-) TimerEvent: {}
+[1.407423] (-) TimerEvent: {}
+[1.469974] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)\n'}
+[1.476288] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.507608] (-) TimerEvent: {}
+[1.580858] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.607817] (-) TimerEvent: {}
+[1.708533] (-) TimerEvent: {}
+[1.809805] (-) TimerEvent: {}
+[1.827337] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)\n'}
+[1.884046] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)\n'}
+[1.909972] (-) TimerEvent: {}
+[2.011292] (-) TimerEvent: {}
+[2.033779] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)\n'}
+[2.111516] (-) TimerEvent: {}
+[2.214080] (-) TimerEvent: {}
+[2.316405] (-) TimerEvent: {}
+[2.417837] (-) TimerEvent: {}
+[2.518899] (-) TimerEvent: {}
+[2.593520] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.594268] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.594744] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.603078] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.603851] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[2.618657] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.619186] (-) TimerEvent: {}
+[2.627484] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.686287] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.686896] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.695021] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.698051] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[2.719363] (-) TimerEvent: {}
+[2.783537] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.819568] (-) TimerEvent: {}
+[2.915897] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Build files have been written to: /home/punished_venom/DroneControls/build/photon_flight_servo_imu\n'}
+[2.919847] (-) TimerEvent: {}
+[3.020680] (-) TimerEvent: {}
+[3.062038] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 33%] Built target servo_driver\n'}
+[3.069281] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o\x1b[0m\n'}
+[3.120877] (-) TimerEvent: {}
+[3.135837] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/gps_listener.dir/src/gpscapture.cpp.o\x1b[0m\n'}
+[3.223871] (-) TimerEvent: {}
+[3.324618] (-) TimerEvent: {}
+[3.425246] (-) TimerEvent: {}
+[3.525900] (-) TimerEvent: {}
+[3.626550] (-) TimerEvent: {}
+[3.727262] (-) TimerEvent: {}
+[3.827974] (-) TimerEvent: {}
+[3.928811] (-) TimerEvent: {}
+[4.029831] (-) TimerEvent: {}
+[4.130882] (-) TimerEvent: {}
+[4.232844] (-) TimerEvent: {}
+[4.334900] (-) TimerEvent: {}
+[4.435741] (-) TimerEvent: {}
+[4.539463] (-) TimerEvent: {}
+[4.640254] (-) TimerEvent: {}
+[4.740982] (-) TimerEvent: {}
+[4.842026] (-) TimerEvent: {}
+[4.944458] (-) TimerEvent: {}
+[5.048495] (-) TimerEvent: {}
+[5.149310] (-) TimerEvent: {}
+[5.253891] (-) TimerEvent: {}
+[5.354719] (-) TimerEvent: {}
+[5.455710] (-) TimerEvent: {}
+[5.559860] (-) TimerEvent: {}
+[5.660715] (-) TimerEvent: {}
+[5.762086] (-) TimerEvent: {}
+[5.865114] (-) TimerEvent: {}
+[5.966861] (-) TimerEvent: {}
+[6.067586] (-) TimerEvent: {}
+[6.169063] (-) TimerEvent: {}
+[6.270084] (-) TimerEvent: {}
+[6.373357] (-) TimerEvent: {}
+[6.474148] (-) TimerEvent: {}
+[6.575221] (-) TimerEvent: {}
+[6.675952] (-) TimerEvent: {}
+[6.776718] (-) TimerEvent: {}
+[6.877476] (-) TimerEvent: {}
+[6.978279] (-) TimerEvent: {}
+[7.079295] (-) TimerEvent: {}
+[7.183355] (-) TimerEvent: {}
+[7.284266] (-) TimerEvent: {}
+[7.385346] (-) TimerEvent: {}
+[7.486134] (-) TimerEvent: {}
+[7.586858] (-) TimerEvent: {}
+[7.687603] (-) TimerEvent: {}
+[7.788395] (-) TimerEvent: {}
+[7.889253] (-) TimerEvent: {}
+[7.990030] (-) TimerEvent: {}
+[8.090826] (-) TimerEvent: {}
+[8.191562] (-) TimerEvent: {}
+[8.292345] (-) TimerEvent: {}
+[8.393575] (-) TimerEvent: {}
+[8.494599] (-) TimerEvent: {}
+[8.595369] (-) TimerEvent: {}
+[8.696106] (-) TimerEvent: {}
+[8.796903] (-) TimerEvent: {}
+[8.897806] (-) TimerEvent: {}
+[8.998533] (-) TimerEvent: {}
+[9.099346] (-) TimerEvent: {}
+[9.200189] (-) TimerEvent: {}
+[9.300943] (-) TimerEvent: {}
+[9.401720] (-) TimerEvent: {}
+[9.502465] (-) TimerEvent: {}
+[9.603277] (-) TimerEvent: {}
+[9.704104] (-) TimerEvent: {}
+[9.804848] (-) TimerEvent: {}
+[9.905856] (-) TimerEvent: {}
+[10.006657] (-) TimerEvent: {}
+[10.107507] (-) TimerEvent: {}
+[10.208317] (-) TimerEvent: {}
+[10.309150] (-) TimerEvent: {}
+[10.409927] (-) TimerEvent: {}
+[10.510757] (-) TimerEvent: {}
+[10.611680] (-) TimerEvent: {}
+[10.713532] (-) TimerEvent: {}
+[10.814656] (-) TimerEvent: {}
+[10.915603] (-) TimerEvent: {}
+[11.016404] (-) TimerEvent: {}
+[11.117264] (-) TimerEvent: {}
+[11.218054] (-) TimerEvent: {}
+[11.318832] (-) TimerEvent: {}
+[11.419583] (-) TimerEvent: {}
+[11.520373] (-) TimerEvent: {}
+[11.621184] (-) TimerEvent: {}
+[11.721967] (-) TimerEvent: {}
+[11.822779] (-) TimerEvent: {}
+[11.923544] (-) TimerEvent: {}
+[12.024356] (-) TimerEvent: {}
+[12.125284] (-) TimerEvent: {}
+[12.227048] (-) TimerEvent: {}
+[12.328443] (-) TimerEvent: {}
+[12.429283] (-) TimerEvent: {}
+[12.530099] (-) TimerEvent: {}
+[12.630854] (-) TimerEvent: {}
+[12.731620] (-) TimerEvent: {}
+[12.832500] (-) TimerEvent: {}
+[12.933263] (-) TimerEvent: {}
+[13.034020] (-) TimerEvent: {}
+[13.134800] (-) TimerEvent: {}
+[13.239001] (-) TimerEvent: {}
+[13.344858] (-) TimerEvent: {}
+[13.447879] (-) TimerEvent: {}
+[13.550230] (-) TimerEvent: {}
+[13.655535] (-) TimerEvent: {}
+[13.759870] (-) TimerEvent: {}
+[13.861104] (-) TimerEvent: {}
+[13.964892] (-) TimerEvent: {}
+[14.065865] (-) TimerEvent: {}
+[14.166838] (-) TimerEvent: {}
+[14.267906] (-) TimerEvent: {}
+[14.368911] (-) TimerEvent: {}
+[14.469962] (-) TimerEvent: {}
+[14.571015] (-) TimerEvent: {}
+[14.672402] (-) TimerEvent: {}
+[14.740724] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/gpscapture.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GpsNode::\x1b[01;32m\x1b[Kgps_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.741546] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/gpscapture.cpp:24:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.742223] (photon_flight_servo_imu) StderrLine: {'line': b'   24 |       auto message = std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K();\n'}
+[14.742670] (photon_flight_servo_imu) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[14.772603] (-) TimerEvent: {}
+[14.873626] (-) TimerEvent: {}
+[14.975098] (-) TimerEvent: {}
+[15.076490] (-) TimerEvent: {}
+[15.177527] (-) TimerEvent: {}
+[15.278509] (-) TimerEvent: {}
+[15.379620] (-) TimerEvent: {}
+[15.480717] (-) TimerEvent: {}
+[15.581736] (-) TimerEvent: {}
+[15.683317] (-) TimerEvent: {}
+[15.784034] (-) TimerEvent: {}
+[15.885026] (-) TimerEvent: {}
+[15.985984] (-) TimerEvent: {}
+[16.087385] (-) TimerEvent: {}
+[16.188374] (-) TimerEvent: {}
+[16.289146] (-) TimerEvent: {}
+[16.390171] (-) TimerEvent: {}
+[16.491130] (-) TimerEvent: {}
+[16.591863] (-) TimerEvent: {}
+[16.692915] (-) TimerEvent: {}
+[16.794018] (-) TimerEvent: {}
+[16.894789] (-) TimerEvent: {}
+[16.995795] (-) TimerEvent: {}
+[17.096951] (-) TimerEvent: {}
+[17.199253] (-) TimerEvent: {}
+[17.300452] (-) TimerEvent: {}
+[17.401505] (-) TimerEvent: {}
+[17.502475] (-) TimerEvent: {}
+[17.603255] (-) TimerEvent: {}
+[17.704269] (-) TimerEvent: {}
+[17.805256] (-) TimerEvent: {}
+[17.906244] (-) TimerEvent: {}
+[18.007863] (-) TimerEvent: {}
+[18.108621] (-) TimerEvent: {}
+[18.209638] (-) TimerEvent: {}
+[18.310646] (-) TimerEvent: {}
+[18.411920] (-) TimerEvent: {}
+[18.514604] (-) TimerEvent: {}
+[18.615682] (-) TimerEvent: {}
+[18.716533] (-) TimerEvent: {}
+[18.817508] (-) TimerEvent: {}
+[18.918412] (-) TimerEvent: {}
+[19.019490] (-) TimerEvent: {}
+[19.120372] (-) TimerEvent: {}
+[19.221260] (-) TimerEvent: {}
+[19.322126] (-) TimerEvent: {}
+[19.422889] (-) TimerEvent: {}
+[19.523612] (-) TimerEvent: {}
+[19.624381] (-) TimerEvent: {}
+[19.725279] (-) TimerEvent: {}
+[19.826031] (-) TimerEvent: {}
+[19.926914] (-) TimerEvent: {}
+[20.027987] (-) TimerEvent: {}
+[20.130233] (-) TimerEvent: {}
+[20.231557] (-) TimerEvent: {}
+[20.332860] (-) TimerEvent: {}
+[20.433656] (-) TimerEvent: {}
+[20.535868] (-) TimerEvent: {}
+[20.637444] (-) TimerEvent: {}
+[20.738321] (-) TimerEvent: {}
+[20.840215] (-) TimerEvent: {}
+[20.941962] (-) TimerEvent: {}
+[21.042828] (-) TimerEvent: {}
+[21.143767] (-) TimerEvent: {}
+[21.244583] (-) TimerEvent: {}
+[21.345500] (-) TimerEvent: {}
+[21.446396] (-) TimerEvent: {}
+[21.547987] (-) TimerEvent: {}
+[21.649515] (-) TimerEvent: {}
+[21.750374] (-) TimerEvent: {}
+[21.851294] (-) TimerEvent: {}
+[21.953474] (-) TimerEvent: {}
+[22.054872] (-) TimerEvent: {}
+[22.157609] (-) TimerEvent: {}
+[22.261260] (-) TimerEvent: {}
+[22.364275] (-) TimerEvent: {}
+[22.374090] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/gps_listener.dir/build.make:79: CMakeFiles/gps_listener.dir/src/gpscapture.cpp.o] Error 1\n'}
+[22.375024] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/gps_listener.dir/all] Error 2\n'}
+[22.375524] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[22.464471] (-) TimerEvent: {}
+[22.565175] (-) TimerEvent: {}
+[22.665824] (-) TimerEvent: {}
+[22.766520] (-) TimerEvent: {}
+[22.867336] (-) TimerEvent: {}
+[22.968178] (-) TimerEvent: {}
+[23.068892] (-) TimerEvent: {}
+[23.169627] (-) TimerEvent: {}
+[23.270433] (-) TimerEvent: {}
+[23.372531] (-) TimerEvent: {}
+[23.473381] (-) TimerEvent: {}
+[23.574152] (-) TimerEvent: {}
+[23.674884] (-) TimerEvent: {}
+[23.775595] (-) TimerEvent: {}
+[23.876346] (-) TimerEvent: {}
+[23.977098] (-) TimerEvent: {}
+[24.077842] (-) TimerEvent: {}
+[24.178570] (-) TimerEvent: {}
+[24.279292] (-) TimerEvent: {}
+[24.380090] (-) TimerEvent: {}
+[24.480848] (-) TimerEvent: {}
+[24.581592] (-) TimerEvent: {}
+[24.682378] (-) TimerEvent: {}
+[24.783165] (-) TimerEvent: {}
+[24.883848] (-) TimerEvent: {}
+[24.984495] (-) TimerEvent: {}
+[25.085191] (-) TimerEvent: {}
+[25.185875] (-) TimerEvent: {}
+[25.286557] (-) TimerEvent: {}
+[25.387219] (-) TimerEvent: {}
+[25.487878] (-) TimerEvent: {}
+[25.588527] (-) TimerEvent: {}
+[25.689227] (-) TimerEvent: {}
+[25.789868] (-) TimerEvent: {}
+[25.890503] (-) TimerEvent: {}
+[25.991206] (-) TimerEvent: {}
+[26.091867] (-) TimerEvent: {}
+[26.192505] (-) TimerEvent: {}
+[26.293181] (-) TimerEvent: {}
+[26.393954] (-) TimerEvent: {}
+[26.494771] (-) TimerEvent: {}
+[26.595586] (-) TimerEvent: {}
+[26.696259] (-) TimerEvent: {}
+[26.796927] (-) TimerEvent: {}
+[26.897638] (-) TimerEvent: {}
+[26.998365] (-) TimerEvent: {}
+[27.099572] (-) TimerEvent: {}
+[27.108285] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 83%] \x1b[1m\x1b[32mLinking CXX executable imu_publisher_node\x1b[0m\n'}
+[27.199963] (-) TimerEvent: {}
+[27.300978] (-) TimerEvent: {}
+[27.401894] (-) TimerEvent: {}
+[27.502975] (-) TimerEvent: {}
+[27.604261] (-) TimerEvent: {}
+[27.705273] (-) TimerEvent: {}
+[27.806397] (-) TimerEvent: {}
+[27.866509] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 83%] Built target imu_publisher_node\n'}
+[27.870455] (photon_flight_servo_imu) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[27.876991] (photon_flight_servo_imu) CommandEnded: {'returncode': 2}
+[27.906957] (-) TimerEvent: {}
+[27.938571] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 2}
+[27.950570] (-) EventReactorShutdown: {}

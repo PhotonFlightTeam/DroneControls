@@ -1,0 +1,254 @@
+[0.000000] (-) TimerEvent: {}
+[0.001088] (-) JobUnselected: {'identifier': 'photon_flight_camera'}
+[0.001438] (-) JobUnselected: {'identifier': 'photon_flight_database_3D'}
+[0.002313] (-) JobUnselected: {'identifier': 'photon_flight_internet'}
+[0.002406] (-) JobUnselected: {'identifier': 'photon_flight_pix'}
+[0.002923] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.003493] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.003761] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.041468] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[0.043620] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'build'}
+[0.045815] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'env': OrderedDict({'SSH_CLIENT': '100.70.40.23 60960 22', 'USER': 'punished_venom', 'GIT_ASKPASS': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass.sh', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'BROWSER': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/helpers/browser.sh', 'HOME': '/home/punished_venom', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-dc8920f7-f6ab-485d-95c2-0b0fa0da234b.sock', 'TERM_PROGRAM_VERSION': '1.140.0', 'VSCODE_GIT_ASKPASS_MAIN': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_NODE': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'lyrical', 'COLCON_PREFIX_PATH': '/home/punished_venom/DroneControls/install', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '163', 'TERM': 'xterm', 'PATH': '/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/remote-cli:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VSCODE_INJECTION': '1', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-73df9b45ae.sock', 'AMENT_PREFIX_PATH': '/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '59405ed4f32c9ef70fe7d1d584ad673b', 'SSH_CONNECTION': '100.70.40.23 60960 100.71.17.45 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:/home/punished_venom/DroneControls/install/photon_flight_camera/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '/opt/ros/lyrical', 'CMAKE_PREFIX_PATH': '/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical'}), 'shell': False}
+[0.099249] (-) TimerEvent: {}
+[0.200451] (-) TimerEvent: {}
+[0.263431] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 50%] Built target servo_driver\n'}
+[0.283036] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o\x1b[0m\n'}
+[0.300876] (-) TimerEvent: {}
+[0.401765] (-) TimerEvent: {}
+[0.502373] (-) TimerEvent: {}
+[0.602983] (-) TimerEvent: {}
+[0.703621] (-) TimerEvent: {}
+[0.804306] (-) TimerEvent: {}
+[0.905017] (-) TimerEvent: {}
+[1.005681] (-) TimerEvent: {}
+[1.106373] (-) TimerEvent: {}
+[1.207067] (-) TimerEvent: {}
+[1.307818] (-) TimerEvent: {}
+[1.408565] (-) TimerEvent: {}
+[1.509293] (-) TimerEvent: {}
+[1.610007] (-) TimerEvent: {}
+[1.710780] (-) TimerEvent: {}
+[1.811503] (-) TimerEvent: {}
+[1.912259] (-) TimerEvent: {}
+[2.012979] (-) TimerEvent: {}
+[2.113753] (-) TimerEvent: {}
+[2.214501] (-) TimerEvent: {}
+[2.315275] (-) TimerEvent: {}
+[2.416067] (-) TimerEvent: {}
+[2.517526] (-) TimerEvent: {}
+[2.618323] (-) TimerEvent: {}
+[2.718971] (-) TimerEvent: {}
+[2.819642] (-) TimerEvent: {}
+[2.920315] (-) TimerEvent: {}
+[3.020953] (-) TimerEvent: {}
+[3.121678] (-) TimerEvent: {}
+[3.222306] (-) TimerEvent: {}
+[3.322944] (-) TimerEvent: {}
+[3.423657] (-) TimerEvent: {}
+[3.524350] (-) TimerEvent: {}
+[3.625285] (-) TimerEvent: {}
+[3.726026] (-) TimerEvent: {}
+[3.826690] (-) TimerEvent: {}
+[3.927366] (-) TimerEvent: {}
+[4.028024] (-) TimerEvent: {}
+[4.128699] (-) TimerEvent: {}
+[4.229362] (-) TimerEvent: {}
+[4.330015] (-) TimerEvent: {}
+[4.430722] (-) TimerEvent: {}
+[4.531401] (-) TimerEvent: {}
+[4.632081] (-) TimerEvent: {}
+[4.732885] (-) TimerEvent: {}
+[4.833722] (-) TimerEvent: {}
+[4.934417] (-) TimerEvent: {}
+[5.035079] (-) TimerEvent: {}
+[5.135746] (-) TimerEvent: {}
+[5.236383] (-) TimerEvent: {}
+[5.337051] (-) TimerEvent: {}
+[5.437718] (-) TimerEvent: {}
+[5.538337] (-) TimerEvent: {}
+[5.638978] (-) TimerEvent: {}
+[5.739743] (-) TimerEvent: {}
+[5.840424] (-) TimerEvent: {}
+[5.941068] (-) TimerEvent: {}
+[6.041747] (-) TimerEvent: {}
+[6.142413] (-) TimerEvent: {}
+[6.243069] (-) TimerEvent: {}
+[6.343801] (-) TimerEvent: {}
+[6.444464] (-) TimerEvent: {}
+[6.545139] (-) TimerEvent: {}
+[6.645839] (-) TimerEvent: {}
+[6.746554] (-) TimerEvent: {}
+[6.847187] (-) TimerEvent: {}
+[6.947857] (-) TimerEvent: {}
+[7.048550] (-) TimerEvent: {}
+[7.149265] (-) TimerEvent: {}
+[7.249914] (-) TimerEvent: {}
+[7.350713] (-) TimerEvent: {}
+[7.451468] (-) TimerEvent: {}
+[7.552201] (-) TimerEvent: {}
+[7.652972] (-) TimerEvent: {}
+[7.753681] (-) TimerEvent: {}
+[7.854345] (-) TimerEvent: {}
+[7.954985] (-) TimerEvent: {}
+[8.055651] (-) TimerEvent: {}
+[8.156338] (-) TimerEvent: {}
+[8.256991] (-) TimerEvent: {}
+[8.357696] (-) TimerEvent: {}
+[8.458396] (-) TimerEvent: {}
+[8.559065] (-) TimerEvent: {}
+[8.659880] (-) TimerEvent: {}
+[8.760901] (-) TimerEvent: {}
+[8.861572] (-) TimerEvent: {}
+[8.962241] (-) TimerEvent: {}
+[9.062920] (-) TimerEvent: {}
+[9.163602] (-) TimerEvent: {}
+[9.264280] (-) TimerEvent: {}
+[9.364921] (-) TimerEvent: {}
+[9.465600] (-) TimerEvent: {}
+[9.566299] (-) TimerEvent: {}
+[9.666999] (-) TimerEvent: {}
+[9.767816] (-) TimerEvent: {}
+[9.868517] (-) TimerEvent: {}
+[9.969158] (-) TimerEvent: {}
+[10.069886] (-) TimerEvent: {}
+[10.170550] (-) TimerEvent: {}
+[10.271198] (-) TimerEvent: {}
+[10.371863] (-) TimerEvent: {}
+[10.472545] (-) TimerEvent: {}
+[10.573177] (-) TimerEvent: {}
+[10.673842] (-) TimerEvent: {}
+[10.774547] (-) TimerEvent: {}
+[10.875178] (-) TimerEvent: {}
+[10.975860] (-) TimerEvent: {}
+[11.076613] (-) TimerEvent: {}
+[11.177349] (-) TimerEvent: {}
+[11.277977] (-) TimerEvent: {}
+[11.378633] (-) TimerEvent: {}
+[11.479328] (-) TimerEvent: {}
+[11.580002] (-) TimerEvent: {}
+[11.680733] (-) TimerEvent: {}
+[11.781360] (-) TimerEvent: {}
+[11.881974] (-) TimerEvent: {}
+[11.982662] (-) TimerEvent: {}
+[12.083328] (-) TimerEvent: {}
+[12.183969] (-) TimerEvent: {}
+[12.284690] (-) TimerEvent: {}
+[12.385610] (-) TimerEvent: {}
+[12.486319] (-) TimerEvent: {}
+[12.586966] (-) TimerEvent: {}
+[12.687672] (-) TimerEvent: {}
+[12.788352] (-) TimerEvent: {}
+[12.888997] (-) TimerEvent: {}
+[12.989677] (-) TimerEvent: {}
+[13.090366] (-) TimerEvent: {}
+[13.191034] (-) TimerEvent: {}
+[13.291781] (-) TimerEvent: {}
+[13.392541] (-) TimerEvent: {}
+[13.493164] (-) TimerEvent: {}
+[13.593912] (-) TimerEvent: {}
+[13.694674] (-) TimerEvent: {}
+[13.795334] (-) TimerEvent: {}
+[13.896011] (-) TimerEvent: {}
+[13.996740] (-) TimerEvent: {}
+[14.097392] (-) TimerEvent: {}
+[14.198042] (-) TimerEvent: {}
+[14.298736] (-) TimerEvent: {}
+[14.399386] (-) TimerEvent: {}
+[14.500070] (-) TimerEvent: {}
+[14.600763] (-) TimerEvent: {}
+[14.701443] (-) TimerEvent: {}
+[14.802254] (-) TimerEvent: {}
+[14.902912] (-) TimerEvent: {}
+[15.003624] (-) TimerEvent: {}
+[15.104341] (-) TimerEvent: {}
+[15.204952] (-) TimerEvent: {}
+[15.305651] (-) TimerEvent: {}
+[15.406332] (-) TimerEvent: {}
+[15.506948] (-) TimerEvent: {}
+[15.607696] (-) TimerEvent: {}
+[15.708687] (-) TimerEvent: {}
+[15.809357] (-) TimerEvent: {}
+[15.910058] (-) TimerEvent: {}
+[16.010855] (-) TimerEvent: {}
+[16.111615] (-) TimerEvent: {}
+[16.212302] (-) TimerEvent: {}
+[16.312987] (-) TimerEvent: {}
+[16.413697] (-) TimerEvent: {}
+[16.514356] (-) TimerEvent: {}
+[16.615029] (-) TimerEvent: {}
+[16.715693] (-) TimerEvent: {}
+[16.816347] (-) TimerEvent: {}
+[16.917113] (-) TimerEvent: {}
+[17.017781] (-) TimerEvent: {}
+[17.118480] (-) TimerEvent: {}
+[17.219120] (-) TimerEvent: {}
+[17.319790] (-) TimerEvent: {}
+[17.420416] (-) TimerEvent: {}
+[17.521054] (-) TimerEvent: {}
+[17.621744] (-) TimerEvent: {}
+[17.722392] (-) TimerEvent: {}
+[17.823266] (-) TimerEvent: {}
+[17.923907] (-) TimerEvent: {}
+[18.024604] (-) TimerEvent: {}
+[18.125256] (-) TimerEvent: {}
+[18.225880] (-) TimerEvent: {}
+[18.326607] (-) TimerEvent: {}
+[18.427259] (-) TimerEvent: {}
+[18.527970] (-) TimerEvent: {}
+[18.628883] (-) TimerEvent: {}
+[18.729923] (-) TimerEvent: {}
+[18.830610] (-) TimerEvent: {}
+[18.931279] (-) TimerEvent: {}
+[19.031907] (-) TimerEvent: {}
+[19.132596] (-) TimerEvent: {}
+[19.233245] (-) TimerEvent: {}
+[19.333876] (-) TimerEvent: {}
+[19.434566] (-) TimerEvent: {}
+[19.535389] (-) TimerEvent: {}
+[19.636030] (-) TimerEvent: {}
+[19.736727] (-) TimerEvent: {}
+[19.837516] (-) TimerEvent: {}
+[19.938268] (-) TimerEvent: {}
+[20.038954] (-) TimerEvent: {}
+[20.139729] (-) TimerEvent: {}
+[20.240443] (-) TimerEvent: {}
+[20.341103] (-) TimerEvent: {}
+[20.441892] (-) TimerEvent: {}
+[20.542446] (photon_flight_servo_imu) StdoutLine: {'line': b'[100%] \x1b[1m\x1b[32mLinking CXX executable imu_publisher_node\x1b[0m\n'}
+[20.544010] (-) TimerEvent: {}
+[20.644781] (-) TimerEvent: {}
+[20.746114] (-) TimerEvent: {}
+[20.847078] (-) TimerEvent: {}
+[20.947921] (-) TimerEvent: {}
+[21.050639] (-) TimerEvent: {}
+[21.151496] (-) TimerEvent: {}
+[21.252382] (-) TimerEvent: {}
+[21.287331] (photon_flight_servo_imu) StdoutLine: {'line': b'[100%] Built target imu_publisher_node\n'}
+[21.325928] (photon_flight_servo_imu) CommandEnded: {'returncode': 0}
+[21.329224] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'install'}
+[21.352554] (-) TimerEvent: {}
+[21.356692] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/punished_venom/DroneControls/build/photon_flight_servo_imu'], 'cwd': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'env': OrderedDict({'SSH_CLIENT': '100.70.40.23 60960 22', 'USER': 'punished_venom', 'GIT_ASKPASS': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass.sh', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'BROWSER': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/helpers/browser.sh', 'HOME': '/home/punished_venom', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-dc8920f7-f6ab-485d-95c2-0b0fa0da234b.sock', 'TERM_PROGRAM_VERSION': '1.140.0', 'VSCODE_GIT_ASKPASS_MAIN': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_NODE': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'lyrical', 'COLCON_PREFIX_PATH': '/home/punished_venom/DroneControls/install', 'LOGNAME': 'punished_venom', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '163', 'TERM': 'xterm', 'PATH': '/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/remote-cli:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VSCODE_INJECTION': '1', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-73df9b45ae.sock', 'AMENT_PREFIX_PATH': '/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '59405ed4f32c9ef70fe7d1d584ad673b', 'SSH_CONNECTION': '100.70.40.23 60960 100.71.17.45 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:/home/punished_venom/DroneControls/install/photon_flight_camera/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '/opt/ros/lyrical', 'CMAKE_PREFIX_PATH': '/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical'}), 'shell': False}
+[21.386139] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.387597] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/lib/photon_flight_servo_imu/servo_driver\n'}
+[21.388580] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Installing: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/lib/photon_flight_servo_imu/imu_publisher_node\n'}
+[21.397589] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/punished_venom/DroneControls/install/photon_flight_servo_imu/lib/photon_flight_servo_imu/imu_publisher_node" to ""\n'}
+[21.398881] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/package_run_dependencies/photon_flight_servo_imu\n'}
+[21.399551] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/parent_prefix_path/photon_flight_servo_imu\n'}
+[21.399996] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.sh\n'}
+[21.401802] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.dsv\n'}
+[21.402734] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.sh\n'}
+[21.403519] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.dsv\n'}
+[21.404121] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.bash\n'}
+[21.404902] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.fish\n'}
+[21.405501] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.sh\n'}
+[21.405982] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.zsh\n'}
+[21.406593] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.dsv\n'}
+[21.407015] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Installing: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.dsv\n'}
+[21.407611] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/packages/photon_flight_servo_imu\n'}
+[21.408005] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig.cmake\n'}
+[21.408640] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig-version.cmake\n'}
+[21.409628] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.xml\n'}
+[21.412048] (photon_flight_servo_imu) CommandEnded: {'returncode': 0}
+[21.453046] (-) TimerEvent: {}
+[21.514202] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 0}
+[21.517337] (-) EventReactorShutdown: {}

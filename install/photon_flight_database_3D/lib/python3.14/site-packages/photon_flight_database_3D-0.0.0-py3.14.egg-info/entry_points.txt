@@ -1,0 +1,2 @@
+[console_scripts]
+lidar_subscriber = photon_flight_database_3D.LiDARSubscriber:main

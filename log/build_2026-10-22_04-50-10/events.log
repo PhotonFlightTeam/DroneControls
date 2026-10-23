@@ -1,0 +1,171 @@
+[0.000000] (-) TimerEvent: {}
+[0.000743] (-) JobUnselected: {'identifier': 'photon_flight_camera'}
+[0.001256] (-) JobUnselected: {'identifier': 'photon_flight_database_3D'}
+[0.001481] (-) JobUnselected: {'identifier': 'photon_flight_internet'}
+[0.002131] (-) JobUnselected: {'identifier': 'photon_flight_pix'}
+[0.002583] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.003273] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.003446] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.042235] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[0.045385] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'build'}
+[0.048819] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'env': OrderedDict({'SSH_CLIENT': '100.70.40.23 60960 22', 'USER': 'punished_venom', 'GIT_ASKPASS': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass.sh', 'XDG_SESSION_TYPE': 'tty', 'BROWSER': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/helpers/browser.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'HOME': '/home/punished_venom', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-dc8920f7-f6ab-485d-95c2-0b0fa0da234b.sock', 'TERM_PROGRAM_VERSION': '1.140.0', 'VSCODE_GIT_ASKPASS_MAIN': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_NODE': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/punished_venom/DroneControls/install', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '163', 'PATH': '/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/remote-cli:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_INJECTION': '1', 'LANG': 'en_US.UTF-8', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-73df9b45ae.sock', 'ROS_DOMAIN_ID': '101', 'AMENT_PREFIX_PATH': '/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical', 'SHELL': '/usr/bin/fish', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.70.40.23 60960 100.71.17.45 22', 'COPILOT_DEBUG_NONCE': '59405ed4f32c9ef70fe7d1d584ad673b', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/punished_venom/DroneControls/install/photon_flight_database_3D/lib/python3.14/site-packages:/home/punished_venom/DroneControls/install/photon_flight_camera/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/punished_venom/DroneControls/install/rplidar_ros:/home/punished_venom/DroneControls/install/photon_flight_servo_imu:/home/punished_venom/DroneControls/install/photon_flight_pix:/home/punished_venom/DroneControls/install/photon_flight_internet:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical', 'AMENT_CURRENT_PREFIX': '/opt/ros/lyrical'}), 'shell': False}
+[0.099352] (-) TimerEvent: {}
+[0.200740] (-) TimerEvent: {}
+[0.268871] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 50%] Built target servo_driver\n'}
+[0.284838] (photon_flight_servo_imu) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o\x1b[0m\n'}
+[0.301558] (-) TimerEvent: {}
+[0.402240] (-) TimerEvent: {}
+[0.502872] (-) TimerEvent: {}
+[0.603581] (-) TimerEvent: {}
+[0.704249] (-) TimerEvent: {}
+[0.804938] (-) TimerEvent: {}
+[0.905630] (-) TimerEvent: {}
+[1.006507] (-) TimerEvent: {}
+[1.107305] (-) TimerEvent: {}
+[1.208023] (-) TimerEvent: {}
+[1.308706] (-) TimerEvent: {}
+[1.409501] (-) TimerEvent: {}
+[1.510238] (-) TimerEvent: {}
+[1.610980] (-) TimerEvent: {}
+[1.711724] (-) TimerEvent: {}
+[1.812454] (-) TimerEvent: {}
+[1.913211] (-) TimerEvent: {}
+[2.013964] (-) TimerEvent: {}
+[2.114718] (-) TimerEvent: {}
+[2.215371] (-) TimerEvent: {}
+[2.316103] (-) TimerEvent: {}
+[2.416935] (-) TimerEvent: {}
+[2.517661] (-) TimerEvent: {}
+[2.618399] (-) TimerEvent: {}
+[2.719069] (-) TimerEvent: {}
+[2.819768] (-) TimerEvent: {}
+[2.920451] (-) TimerEvent: {}
+[3.021134] (-) TimerEvent: {}
+[3.121914] (-) TimerEvent: {}
+[3.222667] (-) TimerEvent: {}
+[3.323330] (-) TimerEvent: {}
+[3.424030] (-) TimerEvent: {}
+[3.524686] (-) TimerEvent: {}
+[3.625373] (-) TimerEvent: {}
+[3.726067] (-) TimerEvent: {}
+[3.826692] (-) TimerEvent: {}
+[3.927338] (-) TimerEvent: {}
+[4.028012] (-) TimerEvent: {}
+[4.128706] (-) TimerEvent: {}
+[4.229413] (-) TimerEvent: {}
+[4.330147] (-) TimerEvent: {}
+[4.430803] (-) TimerEvent: {}
+[4.531475] (-) TimerEvent: {}
+[4.632128] (-) TimerEvent: {}
+[4.732821] (-) TimerEvent: {}
+[4.833466] (-) TimerEvent: {}
+[4.934189] (-) TimerEvent: {}
+[5.034870] (-) TimerEvent: {}
+[5.135512] (-) TimerEvent: {}
+[5.236248] (-) TimerEvent: {}
+[5.337117] (-) TimerEvent: {}
+[5.437824] (-) TimerEvent: {}
+[5.538489] (-) TimerEvent: {}
+[5.639262] (-) TimerEvent: {}
+[5.739936] (-) TimerEvent: {}
+[5.840658] (-) TimerEvent: {}
+[5.941347] (-) TimerEvent: {}
+[6.042026] (-) TimerEvent: {}
+[6.142782] (-) TimerEvent: {}
+[6.243442] (-) TimerEvent: {}
+[6.344163] (-) TimerEvent: {}
+[6.445015] (-) TimerEvent: {}
+[6.545753] (-) TimerEvent: {}
+[6.646391] (-) TimerEvent: {}
+[6.747046] (-) TimerEvent: {}
+[6.847716] (-) TimerEvent: {}
+[6.948357] (-) TimerEvent: {}
+[7.049030] (-) TimerEvent: {}
+[7.149693] (-) TimerEvent: {}
+[7.250335] (-) TimerEvent: {}
+[7.351006] (-) TimerEvent: {}
+[7.451660] (-) TimerEvent: {}
+[7.552320] (-) TimerEvent: {}
+[7.653021] (-) TimerEvent: {}
+[7.753717] (-) TimerEvent: {}
+[7.854355] (-) TimerEvent: {}
+[7.955069] (-) TimerEvent: {}
+[8.055741] (-) TimerEvent: {}
+[8.156447] (-) TimerEvent: {}
+[8.257220] (-) TimerEvent: {}
+[8.357937] (-) TimerEvent: {}
+[8.458642] (-) TimerEvent: {}
+[8.559295] (-) TimerEvent: {}
+[8.659985] (-) TimerEvent: {}
+[8.760661] (-) TimerEvent: {}
+[8.861296] (-) TimerEvent: {}
+[8.962002] (-) TimerEvent: {}
+[9.062669] (-) TimerEvent: {}
+[9.163358] (-) TimerEvent: {}
+[9.264078] (-) TimerEvent: {}
+[9.364931] (-) TimerEvent: {}
+[9.465584] (-) TimerEvent: {}
+[9.566209] (-) TimerEvent: {}
+[9.575698] (photon_flight_servo_imu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/lyrical/include/rclcpp/rclcpp/logging.hpp:22\x1b[m\x1b[K,\n'}
+[9.576973] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/lyrical/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[9.577667] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/lyrical/include/rclcpp/rclcpp/rclcpp.hpp:173\x1b[m\x1b[K,\n'}
+[9.578407] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/imucapture.cpp:5\x1b[m\x1b[K:\n'}
+[9.579093] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/imucapture.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IMUPublisher::\x1b[01;32m\x1b[Kimu_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.580307] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/imucapture.cpp:117:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[K\x1b[01;32m\x1b[Kdouble\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[K\x1b[01;34m\x1b[Kconst char*\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.580985] (photon_flight_servo_imu) StderrLine: {'line': b'  117 |             RCLCPP_INFO(this->get_logger(), \x1b[01;32m\x1b[Kn\x1b[m\x1b[K\x1b[01;32m\x1b[Ke\x1b[m\x1b[K\x1b[01;32m\x1b[Kw\x1b[m\x1b[K\x1b[01;32m\x1b[K_\x1b[m\x1b[K\x1b[01;32m\x1b[Ka\x1b[m\x1b[K\x1b[01;32m\x1b[Kc\x1b[m\x1b[K\x1b[01;32m\x1b[Kc\x1b[m\x1b[K\x1b[01;32m\x1b[Ke\x1b[m\x1b[K\x1b[01;32m\x1b[Kl\x1b[m\x1b[K);\n'}
+[9.581593] (photon_flight_servo_imu) StderrLine: {'line': b'      |                                             \x1b[01;32m\x1b[K^\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\x1b[01;32m\x1b[K~\x1b[m\x1b[K\n'}
+[9.582298] (photon_flight_servo_imu) StderrLine: {'line': b'      |                                             \x1b[01;32m\x1b[K|\x1b[m\x1b[K\n'}
+[9.583252] (photon_flight_servo_imu) StderrLine: {'line': b'      |                                             \x1b[01;32m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[9.583720] (photon_flight_servo_imu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/lyrical/include/rmw/rmw/types.h:28\x1b[m\x1b[K,\n'}
+[9.584107] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/lyrical/include/rcl/rcl/types.h:20\x1b[m\x1b[K,\n'}
+[9.584470] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/lyrical/include/rclcpp/rclcpp/exceptions/exceptions.hpp:23\x1b[m\x1b[K,\n'}
+[9.584892] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/lyrical/include/rclcpp/rclcpp/exceptions.hpp:18\x1b[m\x1b[K,\n'}
+[9.585282] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/lyrical/include/rclcpp/rclcpp/parameter.hpp:25\x1b[m\x1b[K,\n'}
+[9.585713] (photon_flight_servo_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/lyrical/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:25\x1b[m\x1b[K:\n'}
+[9.586105] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/lyrical/include/rcutils/rcutils/logging.h:497:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinitializing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K rcutils_log_internal\x1b[m\x1b[K(const rcutils_log_location_t*, int, const char*, const char*, ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.586515] (photon_flight_servo_imu) StderrLine: {'line': b'  497 |   \x1b[01;34m\x1b[Kc\x1b[m\x1b[K\x1b[01;34m\x1b[Ko\x1b[m\x1b[K\x1b[01;34m\x1b[Kn\x1b[m\x1b[K\x1b[01;34m\x1b[Ks\x1b[m\x1b[K\x1b[01;34m\x1b[Kt\x1b[m\x1b[K\x1b[01;34m\x1b[K \x1b[m\x1b[K\x1b[01;34m\x1b[Kc\x1b[m\x1b[K\x1b[01;34m\x1b[Kh\x1b[m\x1b[K\x1b[01;34m\x1b[Ka\x1b[m\x1b[K\x1b[01;34m\x1b[Kr\x1b[m\x1b[K\x1b[01;34m\x1b[K \x1b[m\x1b[K\x1b[01;34m\x1b[K*\x1b[m\x1b[K\x1b[01;34m\x1b[K \x1b[m\x1b[K\x1b[01;34m\x1b[Kf\x1b[m\x1b[K\x1b[01;34m\x1b[Ko\x1b[m\x1b[K\x1b[01;34m\x1b[Kr\x1b[m\x1b[K\x1b[01;34m\x1b[Km\x1b[m\x1b[K\x1b[01;34m\x1b[Ka\x1b[m\x1b[K\x1b[01;34m\x1b[Kt\x1b[m\x1b[K,\n'}
+[9.587030] (photon_flight_servo_imu) StderrLine: {'line': b'      |   \x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K^\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\x1b[01;34m\x1b[K~\x1b[m\x1b[K\n'}
+[9.666391] (-) TimerEvent: {}
+[9.767059] (-) TimerEvent: {}
+[9.867696] (-) TimerEvent: {}
+[9.968343] (-) TimerEvent: {}
+[10.069077] (-) TimerEvent: {}
+[10.169718] (-) TimerEvent: {}
+[10.270377] (-) TimerEvent: {}
+[10.371073] (-) TimerEvent: {}
+[10.471714] (-) TimerEvent: {}
+[10.572341] (-) TimerEvent: {}
+[10.673008] (-) TimerEvent: {}
+[10.773676] (-) TimerEvent: {}
+[10.874312] (-) TimerEvent: {}
+[10.974980] (-) TimerEvent: {}
+[11.075651] (-) TimerEvent: {}
+[11.176319] (-) TimerEvent: {}
+[11.276986] (-) TimerEvent: {}
+[11.377679] (-) TimerEvent: {}
+[11.478332] (-) TimerEvent: {}
+[11.579002] (-) TimerEvent: {}
+[11.679639] (-) TimerEvent: {}
+[11.780251] (-) TimerEvent: {}
+[11.880990] (-) TimerEvent: {}
+[11.981646] (-) TimerEvent: {}
+[12.082292] (-) TimerEvent: {}
+[12.183037] (-) TimerEvent: {}
+[12.283860] (-) TimerEvent: {}
+[12.384517] (-) TimerEvent: {}
+[12.485255] (-) TimerEvent: {}
+[12.586248] (-) TimerEvent: {}
+[12.686948] (-) TimerEvent: {}
+[12.787625] (-) TimerEvent: {}
+[12.888242] (-) TimerEvent: {}
+[12.988957] (-) TimerEvent: {}
+[13.089629] (-) TimerEvent: {}
+[13.190344] (-) TimerEvent: {}
+[13.291085] (-) TimerEvent: {}
+[13.312407] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imu_publisher_node.dir/build.make:79: CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o] Interrupt\n'}
+[13.316404] (photon_flight_servo_imu) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_publisher_node.dir/all] Interrupt\n'}
+[13.318458] (photon_flight_servo_imu) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[13.391282] (-) TimerEvent: {}
+[13.402175] (photon_flight_servo_imu) CommandEnded: {'returncode': -2}
+[13.458389] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 'SIGINT'}
+[13.470484] (-) EventReactorShutdown: {}

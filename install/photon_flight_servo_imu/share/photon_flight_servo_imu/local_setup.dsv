@@ -1,0 +1,2 @@
+source;share/photon_flight_servo_imu/environment/ament_prefix_path.sh
+source;share/photon_flight_servo_imu/environment/path.sh

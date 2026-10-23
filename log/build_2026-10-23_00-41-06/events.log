@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.000708] (-) JobUnselected: {'identifier': 'photon_flight_camera'}
+[0.001220] (-) JobUnselected: {'identifier': 'photon_flight_database_3D'}
+[0.001359] (-) JobUnselected: {'identifier': 'photon_flight_internet'}
+[0.001575] (-) JobUnselected: {'identifier': 'photon_flight_pix'}
+[0.002260] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.002745] (photon_flight_servo_imu) JobQueued: {'identifier': 'photon_flight_servo_imu', 'dependencies': OrderedDict()}
+[0.003206] (photon_flight_servo_imu) JobStarted: {'identifier': 'photon_flight_servo_imu'}
+[0.038386] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'cmake'}
+[0.040721] (photon_flight_servo_imu) JobProgress: {'identifier': 'photon_flight_servo_imu', 'progress': 'build'}
+[0.042833] (photon_flight_servo_imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', '--', '-j4', '-l4'], 'cwd': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'env': OrderedDict({'SSH_CLIENT': '100.70.40.23 36480 22', 'USER': 'punished_venom', 'GIT_ASKPASS': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass.sh', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'SHLVL': '2', 'BROWSER': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/helpers/browser.sh', 'HOME': '/home/punished_venom', 'TERM_PROGRAM_VERSION': '1.140.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bd5e59db-cab4-48f5-a7f5-369f596bc70d.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_NODE': '/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'punished_venom', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '191', 'PATH': '/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/punished_venom/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/punished_venom/.vscode-server/bin/07f806f999227108933c2e30515b26eecc1fda74/bin/remote-cli:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_INJECTION': '1', 'LANG': 'en_US.UTF-8', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-73df9b45ae.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DOMAIN_ID': '101', 'SHELL': '/usr/bin/fish', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/punished_venom/DroneControls/build/photon_flight_servo_imu', 'LC_ALL': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '100.70.40.23 36480 100.71.17.45 22', 'COPILOT_DEBUG_NONCE': '59405ed4f32c9ef70fe7d1d584ad673b', 'PYTHONPATH': '/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'AMENT_CURRENT_PREFIX': '', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical'}), 'shell': False}
+[0.099247] (-) TimerEvent: {}
+[0.137861] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)\n'}
+[0.199434] (-) TimerEvent: {}
+[0.300275] (-) TimerEvent: {}
+[0.401519] (-) TimerEvent: {}
+[0.502164] (-) TimerEvent: {}
+[0.602777] (-) TimerEvent: {}
+[0.703465] (-) TimerEvent: {}
+[0.804388] (-) TimerEvent: {}
+[0.905473] (-) TimerEvent: {}
+[1.006439] (-) TimerEvent: {}
+[1.078560] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)\n'}
+[1.106586] (-) TimerEvent: {}
+[1.159625] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)\n'}
+[1.178118] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)\n'}
+[1.206751] (-) TimerEvent: {}
+[1.213554] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.252272] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.306940] (-) TimerEvent: {}
+[1.407666] (-) TimerEvent: {}
+[1.472457] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)\n'}
+[1.477682] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.507842] (-) TimerEvent: {}
+[1.578175] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.608044] (-) TimerEvent: {}
+[1.708766] (-) TimerEvent: {}
+[1.809473] (-) TimerEvent: {}
+[1.819618] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)\n'}
+[1.876618] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)\n'}
+[1.909685] (-) TimerEvent: {}
+[2.010410] (-) TimerEvent: {}
+[2.028285] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)\n'}
+[2.110579] (-) TimerEvent: {}
+[2.211200] (-) TimerEvent: {}
+[2.312467] (-) TimerEvent: {}
+[2.413964] (-) TimerEvent: {}
+[2.515160] (-) TimerEvent: {}
+[2.589985] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.590999] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.591650] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.599713] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.600276] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[2.615028] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.615586] (-) TimerEvent: {}
+[2.624019] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.682351] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.682935] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.690999] (photon_flight_servo_imu) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.694073] (photon_flight_servo_imu) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[2.708141] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (add_executable):\n'}
+[2.708862] (photon_flight_servo_imu) StderrLine: {'line': b'  Cannot find source file:\n'}
+[2.709247] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[2.709726] (photon_flight_servo_imu) StderrLine: {'line': b'    src/gps_listener.cpp\n'}
+[2.710080] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[2.710440] (photon_flight_servo_imu) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm\n'}
+[2.710801] (photon_flight_servo_imu) StderrLine: {'line': b'  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90\n'}
+[2.711249] (photon_flight_servo_imu) StderrLine: {'line': b'  .f95 .f03 .hip .ispc\n'}
+[2.711678] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[2.712082] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0m\n'}
+[2.712694] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (add_executable):\n'}
+[2.713120] (photon_flight_servo_imu) StderrLine: {'line': b'  No SOURCES given to target: gps_listener\n'}
+[2.713830] (photon_flight_servo_imu) StderrLine: {'line': b'\n'}
+[2.714450] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0m\n'}
+[2.715114] (photon_flight_servo_imu) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[2.715823] (-) TimerEvent: {}
+[2.730178] (photon_flight_servo_imu) StderrLine: {'line': b'gmake: *** [Makefile:308: cmake_check_build_system] Error 1\n'}
+[2.736619] (photon_flight_servo_imu) CommandEnded: {'returncode': 2}
+[2.789568] (photon_flight_servo_imu) JobEnded: {'identifier': 'photon_flight_servo_imu', 'rc': 2}
+[2.801725] (-) EventReactorShutdown: {}

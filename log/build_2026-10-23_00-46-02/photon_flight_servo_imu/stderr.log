@@ -1,0 +1,8 @@
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/gpscapture.cpp:[m[K In member function ‘[01m[Kvoid GpsNode::[01;32m[Kgps_callback[m[K()[m[K’:
+[01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/gpscapture.cpp:24:37:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   24 |       auto message = std_msgs::msg::[01;31m[KString[m[K();
+      |                                     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gps_listener.dir/build.make:79: CMakeFiles/gps_listener.dir/src/gpscapture.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/gps_listener.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

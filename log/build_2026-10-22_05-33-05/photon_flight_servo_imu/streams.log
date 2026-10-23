@@ -1,0 +1,11 @@
+[0.047s] Invoking command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/build/photon_flight_servo_imu -- -j4 -l4
+[0.251s] [ 50%] Built target servo_driver
+[0.281s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o[0m
+[9.876s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/imucapture.cpp:[m[K In member function ‘[01m[Kvoid IMUPublisher::[01;32m[Kimu_callback[m[K()[m[K’:
+[9.876s] [01m[K/home/punished_venom/DroneControls/src/photon_flight_servo_imu/src/imucapture.cpp:136:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwake[m[K’ was not declared in this scope
+[9.877s]   136 |         [01;31m[Kwake[m[K();
+[9.877s]       |         [01;31m[K^~~~[m[K
+[16.380s] gmake[2]: *** [CMakeFiles/imu_publisher_node.dir/build.make:79: CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o] Error 1
+[16.380s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/imu_publisher_node.dir/all] Error 2
+[16.381s] gmake: *** [Makefile:146: all] Error 2
+[16.388s] Invoked command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/build/photon_flight_servo_imu -- -j4 -l4

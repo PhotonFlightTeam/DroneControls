@@ -1,0 +1,10 @@
+[ 33%] Built target servo_driver
+[ 50%] [32mBuilding CXX object CMakeFiles/gps_listener.dir/src/gpscapture.cpp.o[0m
+[ 83%] Built target imu_publisher_node
+[100%] [1m[32mLinking CXX executable gps_listener[0m
+/usr/bin/aarch64-linux-gnu-ld.bfd: cannot find -lrclcpp: No such file or directory
+/usr/bin/aarch64-linux-gnu-ld.bfd: cannot find -lsensor_msgs: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/gps_listener.dir/build.make:174: gps_listener] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/gps_listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

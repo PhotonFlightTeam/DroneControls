@@ -1,0 +1,28 @@
+[0.066s] Invoking command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/build/photon_flight_servo_imu -- -j4 -l4
+[0.298s] [ 50%] Built target servo_driver
+[0.316s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_publisher_node.dir/src/imucapture.cpp.o[0m
+[20.700s] [100%] [1m[32mLinking CXX executable imu_publisher_node[0m
+[21.458s] [100%] Built target imu_publisher_node
+[21.492s] Invoked command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical /usr/bin/cmake --build /home/punished_venom/DroneControls/build/photon_flight_servo_imu -- -j4 -l4
+[21.524s] Invoking command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical /usr/bin/cmake --install /home/punished_venom/DroneControls/build/photon_flight_servo_imu
+[21.552s] -- Install configuration: ""
+[21.553s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/lib/photon_flight_servo_imu/servo_driver
+[21.556s] -- Installing: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/lib/photon_flight_servo_imu/imu_publisher_node
+[21.561s] -- Set non-toolchain portion of runtime path of "/home/punished_venom/DroneControls/install/photon_flight_servo_imu/lib/photon_flight_servo_imu/imu_publisher_node" to ""
+[21.563s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/package_run_dependencies/photon_flight_servo_imu
+[21.563s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/parent_prefix_path/photon_flight_servo_imu
+[21.564s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.sh
+[21.565s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/ament_prefix_path.dsv
+[21.566s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.sh
+[21.566s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/environment/path.dsv
+[21.567s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.bash
+[21.568s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.fish
+[21.569s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.sh
+[21.570s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.zsh
+[21.571s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/local_setup.dsv
+[21.573s] -- Installing: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.dsv
+[21.574s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/ament_index/resource_index/packages/photon_flight_servo_imu
+[21.574s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig.cmake
+[21.576s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/cmake/photon_flight_servo_imuConfig-version.cmake
+[21.577s] -- Up-to-date: /home/punished_venom/DroneControls/install/photon_flight_servo_imu/share/photon_flight_servo_imu/package.xml
+[21.578s] Invoked command in '/home/punished_venom/DroneControls/build/photon_flight_servo_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/punished_venom/DroneControls/install/photon_flight_database_3D:/home/punished_venom/DroneControls/install/photon_flight_camera:/opt/ros/lyrical /usr/bin/cmake --install /home/punished_venom/DroneControls/build/photon_flight_servo_imu
