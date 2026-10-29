@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/punished_venom/DroneControls/build/rplidar_ros/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

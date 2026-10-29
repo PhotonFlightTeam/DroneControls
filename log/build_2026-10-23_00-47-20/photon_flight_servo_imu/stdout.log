@@ -1,4 +1,0 @@
-[ 33%] Built target servo_driver
-[ 50%] [32mBuilding CXX object CMakeFiles/gps_listener.dir/src/gpscapture.cpp.o[0m
-[ 83%] Built target imu_publisher_node
-[100%] [1m[32mLinking CXX executable gps_listener[0m
