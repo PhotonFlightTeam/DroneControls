@@ -11,6 +11,28 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
+add_executable(internet_publisher_node src/internet_check.cpp)
+
+target_link_libraries(internet_publisher_node 
+rclcpp::rclcpp
+std_msgs::std_msgs__rosidl_generator_c
+std_msgs::std_msgs__rosidl_typesupport_cpp
+sensor_msgs::sensor_msgs__rosidl_generator_c
+sensor_msgs::sensor_msgs__rosidl_typesupport_cpp
+lgpio
+)
+
+
+install(TARGETS 
+internet_publisher_node
+DESTINATION lib/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

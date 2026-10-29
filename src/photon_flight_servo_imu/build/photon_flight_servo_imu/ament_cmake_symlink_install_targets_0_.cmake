@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/punished_venom/DroneControls/src/photon_flight_servo_imu/build/photon_flight_servo_imu/servo_driver" "TARGETS" "servo_driver" "DESTINATION" "lib/photon_flight_servo_imu")
