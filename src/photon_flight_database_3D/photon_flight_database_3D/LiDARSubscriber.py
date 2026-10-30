@@ -22,16 +22,18 @@ class LiDARSubscriber(Node):
             Imu,
             '/imu/data',
             self.imu_listener_callback,
-            11)
+            10)
         # THOUGHT slightly higher time to enforce ordering of matrix
         self.subscription = self.create_subscription(
             Float64MultiArray,
             'gps/readings', 
             self.gps_listener_callback, 
-            12)
+            10)
 
-        self.imu = np.full(6, np.nan)  
-        self.gps = np.full(1, np.nan)
+        # LiDAR matrix columns: angle, range, accel_xyz (3), gyro_xyz (3),
+        # gyroscope timestamp, GPS latitude/longitude/altitude.
+        self.imu = np.full(7, np.nan)
+        self.gps = np.full(4, np.nan)
         self.scan_matrix = []
 
     def lidar_listener_callback(self, msg):
@@ -63,11 +65,15 @@ class LiDARSubscriber(Node):
             throttle_duration_sec=1.0)
         
     def imu_listener_callback(self, msg):
+        # place timestamp for header so we can calculate the current yaw (when the nose moves side to side)
+        # needed because gyroscope gives us angular rates not actual angles
+        gyro_timestamp = msg.header.stamp.sec + (
+            msg.header.stamp.nanosec / 1e9)
         self.imu = np.array([
             msg.linear_acceleration.x, msg.linear_acceleration.y,
             msg.linear_acceleration.z,
             msg.angular_velocity.x, msg.angular_velocity.y,
-            msg.angular_velocity.z])
+            msg.angular_velocity.z, gyro_timestamp])
         self.get_logger().info(
             f"IMU readings received: {self.imu.tolist()}",
             throttle_duration_sec=1.0)
@@ -89,8 +95,9 @@ class LiDARSubscriber(Node):
         file_name = f"2D_Flight_Matrix_{file_append_num}.npy"
 
         while os.path.exists(file_name):
-            file_append_num += 1 
-        np.save(file_name, saved_matrix, allow_pickle=True) 
+            file_append_num += 1
+            file_name = f"2D_Flight_Matrix_{file_append_num}.npy"
+        np.save(file_name, saved_matrix, allow_pickle=True)
 
 
 def main(args=None):
