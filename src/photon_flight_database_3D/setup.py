@@ -12,7 +12,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
     ],
     package_data={'': ['py.typed']},
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'laspy[lazrs]'],
     zip_safe=True,
     maintainer='FreeCharles02',
     maintainer_email='charleskolb02@gmail.com',
@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
            'lidar_subscriber = photon_flight_database_3D.LiDARSubscriber:main',
+           'Conversion_node = photon_flight_database_3D.LiDAR3DConversion:main',
         ],
     },
 )
