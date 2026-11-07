@@ -95,13 +95,16 @@ class LiDARSubscriber(Node):
     def save_shutdown(self):
         if not self.scan_matrix:
             return
+            #should be 13
         expected_columns = len(self.imu) + len(self.gps) + 2
+        # stores valid blocks and loops to ensure they actually match the conditions
         valid_blocks = [
             block for block in self.scan_matrix
             if block.ndim == 2 and block.shape[1] == expected_columns
         ]
         if not valid_blocks:
             return
+        #remove blocks that are left (didnt meet condition)
         if len(valid_blocks) != len(self.scan_matrix):
             self.get_logger().warn(
                 f"Discarded {len(self.scan_matrix) - len(valid_blocks)} scan blocks with inconsistent widths.")
@@ -112,9 +115,8 @@ class LiDARSubscriber(Node):
             file_append_num += 1
             file_name = f"2D_Flight_Matrix_{file_append_num}.npy"
 
-        saved_matrix = np.empty(len(valid_blocks), dtype=object)
-        saved_matrix[:] = valid_blocks
-        np.save(file_name, saved_matrix, allow_pickle=True)
+        saved_matrix = np.vstack(valid_blocks)
+        np.save(file_name, saved_matrix)
 
 
 def main(args=None):

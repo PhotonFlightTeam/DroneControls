@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 *.npy
 *.las
+.vscode
