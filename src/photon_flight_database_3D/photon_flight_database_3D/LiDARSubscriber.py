@@ -79,7 +79,13 @@ class LiDARSubscriber(Node):
             throttle_duration_sec=1.0)
 
     def gps_listener_callback(self, msg):
-        self.gps = np.asarray(msg.data, dtype=float)
+        readings = np.asarray(msg.data, dtype=float)
+        if readings.shape != (3,):
+            self.get_logger().warn(
+                f"Ignoring GPS reading with shape {readings.shape}; expected 3 values.",
+                throttle_duration_sec=1.0)
+            return
+        self.gps = readings
         self.get_logger().info(
             f"GPS readings received: {self.gps.tolist()}",
             throttle_duration_sec=1.0)
@@ -89,14 +95,25 @@ class LiDARSubscriber(Node):
     def save_shutdown(self):
         if not self.scan_matrix:
             return
-        saved_matrix = np.vstack(self.scan_matrix)
-
+        expected_columns = len(self.imu) + len(self.gps) + 2
+        valid_blocks = [
+            block for block in self.scan_matrix
+            if block.ndim == 2 and block.shape[1] == expected_columns
+        ]
+        if not valid_blocks:
+            return
+        if len(valid_blocks) != len(self.scan_matrix):
+            self.get_logger().warn(
+                f"Discarded {len(self.scan_matrix) - len(valid_blocks)} scan blocks with inconsistent widths.")
         file_append_num = 0
         file_name = f"2D_Flight_Matrix_{file_append_num}.npy"
 
         while os.path.exists(file_name):
             file_append_num += 1
             file_name = f"2D_Flight_Matrix_{file_append_num}.npy"
+
+        saved_matrix = np.empty(len(valid_blocks), dtype=object)
+        saved_matrix[:] = valid_blocks
         np.save(file_name, saved_matrix, allow_pickle=True)
 
 
