@@ -34,7 +34,7 @@ def ema(x, t, tau):
 class ConversionNode(Node):
 
     COLUMN_T, COLUMN_ANGLE, COLUMN_RANGE = 8, 0, 1
-    COLUMN_ACCEL, COLUMN_GYRO, COLUMN_GPS = slice(2, 5), slice(5, 8), slice(9, 12)
+    COLUMN_ACCEL, COLUMN_GYRO, COLUMN_GPS = slice(2, 5), slice(5, 8), slice(9, 13)
     BIAS_SECONDS = 3.0
 
     def __init__(self):

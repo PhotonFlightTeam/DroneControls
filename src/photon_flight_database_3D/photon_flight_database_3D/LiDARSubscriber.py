@@ -46,6 +46,7 @@ class LiDARSubscriber(Node):
         valid_mask = np.isfinite(ranges)  # filter out bad scans
 
         scan = np.column_stack((angles[valid_mask], ranges[valid_mask]))
+        # dont store anything if we're not even getting scans
         if len(scan) == 0:
             return
 
@@ -80,9 +81,9 @@ class LiDARSubscriber(Node):
 
     def gps_listener_callback(self, msg):
         readings = np.asarray(msg.data, dtype=float)
-        if readings.shape != (3,):
-            self.get_logger().warn(
-                f"Ignoring GPS reading with shape {readings.shape}; expected 3 values.",
+        if readings.shape != (4,):
+            self.get_logger().warning(
+                f"Ignoring GPS reading with shape {readings.shape}; expected 4 values (latitude, longitude, altitude, timestamp).",
                 throttle_duration_sec=1.0)
             return
         self.gps = readings
@@ -94,8 +95,10 @@ class LiDARSubscriber(Node):
 
     def save_shutdown(self):
         if not self.scan_matrix:
+            self.get_logger().warning(
+                'No LiDAR scan blocks were received; no flight matrix was saved.')
             return
-            #should be 13
+        #should be 13
         expected_columns = len(self.imu) + len(self.gps) + 2
         # stores valid blocks and loops to ensure they actually match the conditions
         valid_blocks = [
@@ -103,10 +106,15 @@ class LiDARSubscriber(Node):
             if block.ndim == 2 and block.shape[1] == expected_columns
         ]
         if not valid_blocks:
+            widths = sorted({block.shape[1] for block in self.scan_matrix
+                             if block.ndim == 2})
+            self.get_logger().warning(
+                f'No valid scan blocks matched {expected_columns} columns; '
+                f'block widths received: {widths}.')
             return
         #remove blocks that are left (didnt meet condition)
         if len(valid_blocks) != len(self.scan_matrix):
-            self.get_logger().warn(
+            self.get_logger().warning(
                 f"Discarded {len(self.scan_matrix) - len(valid_blocks)} scan blocks with inconsistent widths.")
         file_append_num = 0
         file_name = f"2D_Flight_Matrix_{file_append_num}.npy"
@@ -117,6 +125,9 @@ class LiDARSubscriber(Node):
 
         saved_matrix = np.vstack(valid_blocks)
         np.save(file_name, saved_matrix)
+        self.get_logger().info(
+            f'Saved {saved_matrix.shape[0]} samples with '
+            f'{saved_matrix.shape[1]} columns to {file_name}.')
 
 
 def main(args=None):

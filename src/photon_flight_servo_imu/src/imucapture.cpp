@@ -112,7 +112,7 @@ private:
         message.angular_velocity.y = (gyro_store[1] / GYRO_SCALE) * DEG_TO_RAD;
         message.angular_velocity.z = (gyro_store[2] / GYRO_SCALE) * DEG_TO_RAD;
 
-        for (auto accel : accel_store) {
+   /*     for (auto accel : accel_store) {
             auto new_accel = (accel / ACCEL_SCALE) * GRAVITY;
             RCLCPP_INFO(this->get_logger(), "Acceleration: %.3f", new_accel);
         }
@@ -121,7 +121,7 @@ private:
         for (auto gyro : gyro_store) {
             auto new_gyro = (gyro / GYRO_SCALE) * DEG_TO_RAD;
             RCLCPP_INFO(this->get_logger(), "GyroScope: %.3f", new_gyro);
-        }
+        } */
 
         // closure to wake up imu if connection drops
         auto wake_up = [&]() {

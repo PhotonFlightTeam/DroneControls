@@ -11,7 +11,9 @@ public:
       "fix", 10,
       [this](sensor_msgs::msg::NavSatFix::SharedPtr msg) {
      std_msgs::msg::Float64MultiArray out;
-        out.data = {msg->latitude, msg->longitude, msg->altitude};
+        const double gps_timestamp = msg->header.stamp.sec
+          + static_cast<double>(msg->header.stamp.nanosec) / 1e9;
+        out.data = {msg->latitude, msg->longitude, msg->altitude, gps_timestamp};
         pub_->publish(out);
    });
   }
