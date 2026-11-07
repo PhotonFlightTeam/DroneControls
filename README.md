@@ -107,47 +107,43 @@ source install/setup.bash
 
 The exact device serial port and topics may differ by hardware configuration.
 
-1. Source the workspace and start the RPLiDAR driver:
+1. Source the workspace and start all flight capture nodes together:
 
 ```bash
 source install/setup.bash
+ros2 launch photon_flight_database_3D flight_capture.launch.py
+```
+
+The launch file defaults to `/dev/ttyUSB0` for the RPLiDAR and `/dev/ttyACM0` for the GPS. Override either device or baud rate when needed:
+
+```bash
+ros2 launch photon_flight_database_3D flight_capture.launch.py \
+  lidar_port:=/dev/ttyUSB1 \
+  lidar_baudrate:=115200 \
+  lidar_frame:=laser \
+  gps_port:=/dev/ttyACM1 \
+  gps_baudrate:=9600
+```
+
+It starts the RPLiDAR node, NMEA serial GPS driver, GPS-to-array converter, IMU publisher, and LiDAR flight recorder. The launch-file configuration is equivalent to:
+
+```bash
 ros2 run rplidar_ros rplidar_node --ros-args \
   -p serial_port:=/dev/ttyUSB0 \
   -p serial_baudrate:=115200 \
   -p frame_id:=laser \
   -p angle_compensate:=true
-```
 
-2. In another terminal, start the serial NMEA GPS driver:
-
-```bash
-source install/setup.bash
 ros2 run nmea_navsat_driver nmea_serial_driver --ros-args \
   -p port:=/dev/ttyACM0 \
   -p baud:=9600
-```
 
-Then convert its `sensor_msgs/NavSatFix` output into `gps/readings` with the project GPS listener:
-
-```bash
-source install/setup.bash
 ros2 run photon_flight_servo_imu gps_listener
-```
-
-3. In another terminal, start the IMU publisher:
-
-```bash
-source install/setup.bash
 ros2 run photon_flight_servo_imu imu_publisher_node
-```
-
-5. Start the flight data recorder:
-
-```bash
 ros2 run photon_flight_database_3D lidar_subscriber
 ```
 
-6. Stop the recorder with `Ctrl+C`. It saves the latest valid flight data as a numbered file:
+2. Stop the recorder with `Ctrl+C`. It saves the latest valid flight data as a numbered file:
 
 ```text
 2D_Flight_Matrix_0.npy
@@ -155,7 +151,7 @@ ros2 run photon_flight_database_3D lidar_subscriber
 2D_Flight_Matrix_2.npy
 ```
 
-7. Generate a LAS point cloud. The conversion node automatically loads the matrix with the highest numbered flight file in the current directory:
+3. Generate a LAS point cloud. The conversion node automatically loads the matrix with the highest numbered flight file in the current directory:
 
 ```bash
 ros2 run photon_flight_database_3D Conversion_node
