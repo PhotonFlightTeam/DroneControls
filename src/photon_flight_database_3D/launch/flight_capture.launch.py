@@ -18,7 +18,7 @@ def generate_launch_description():
             description='Serial port used by the RPLiDAR'),
         DeclareLaunchArgument(
             'lidar_baudrate',
-            default_value='115200',
+            default_value='115200', # old 115200
             description='Baud rate used by the RPLiDAR'),
         DeclareLaunchArgument(
             'lidar_frame',

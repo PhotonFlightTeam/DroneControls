@@ -4,6 +4,8 @@ import numpy as np
 import glob
 import re
 
+from photon_flight_database_3D.gps_utils import gps_offsets_per_scan
+
 # credit and learning https://electronic-python.readthedocs.io/en/latest/vpython/yaw_pitch_roll.html
 
 
@@ -70,9 +72,31 @@ class ConversionNode(Node):
 
         # A negative change marks a new LiDAR scan boundary.
         starts = np.flatnonzero(np.r_[True, np.diff(m[:, self.COLUMN_ANGLE]) < 0])
-        t = m[starts, self.COLUMN_T] - m[starts[0], self.COLUMN_T]
+        scan_indices = np.arange(len(starts))
+        scan_times = m[starts, self.COLUMN_T]
+        valid_times = np.isfinite(scan_times)
+        if not valid_times.any():
+            raise RuntimeError(
+                'The flight matrix contains no valid IMU timestamps')
+        t = np.interp(
+            scan_indices, scan_indices[valid_times], scan_times[valid_times])
+        if np.any(np.diff(t) < 0):
+            raise RuntimeError('IMU timestamps go backwards between scans')
+        t -= t[0]
+
         accel = m[starts][:, self.COLUMN_ACCEL]
         gyro = m[starts][:, self.COLUMN_GYRO]
+        for readings, sensor_name in (
+                (accel, 'accelerometer'), (gyro, 'gyroscope')):
+            for axis in range(readings.shape[1]):
+                valid_readings = np.isfinite(readings[:, axis])
+                if not valid_readings.any():
+                    raise RuntimeError(
+                        'The flight matrix contains no valid '
+                        f'{sensor_name} readings')
+                readings[:, axis] = np.interp(
+                    scan_indices, scan_indices[valid_readings],
+                    readings[valid_readings, axis])
 
         n_ref = max(int(np.sum(t < self.BIAS_SECONDS)), 3)
         rotation_to_z(accel[:n_ref].mean(axis=0))
@@ -146,6 +170,18 @@ class ConversionNode(Node):
         x = cy * x1 - sy * y1
         y = sy * x1 + cy * y1
         z = z2
+
+        gps_offsets = gps_offsets_per_scan(m, starts)
+        x += gps_offsets[point_scan, 0]
+        y += gps_offsets[point_scan, 1]
+        z += gps_offsets[point_scan, 2]
+
+        if not all(
+                np.isfinite(coordinates).all()
+                for coordinates in (x, y, z)):
+            raise RuntimeError(
+                'Point coordinates contain non-finite values; refusing to '
+                'write an invalid LAS file')
 
         header = laspy.LasHeader(point_format=3, version='1.3')
         header.offset = [np.floor(minimum) for minimum in (x.min(), y.min(), z.min())]
