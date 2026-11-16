@@ -6,3 +6,5 @@ __pycache__/
 *.npy
 *.las
 .vscode
+**/test/
+**/tests/

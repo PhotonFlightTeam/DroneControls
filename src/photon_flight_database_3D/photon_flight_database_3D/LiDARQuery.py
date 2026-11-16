@@ -47,7 +47,7 @@ class QuerySubscriber(Node):
                 self.get_logger().info("DB connection closed :D")
 
 
-            
+        
 
 
 def main(args=None):

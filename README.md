@@ -53,13 +53,24 @@ Matrix shape:
 
 The expected column count is calculated from the IMU and GPS arrays plus the two LiDAR columns. Scans with missing or inconsistent sensor data are discarded during shutdown saving.
 
-During LAS conversion, GPS positions are interpolated to each scan's IMU time,
-converted to local east/north/up offsets in meters, and added to its LiDAR
-points. This interpolates between repeated one-second GPS fixes rather than
-leaving several scans at the same position. The resulting cloud is relative to
-the first available GPS fix, not georeferenced to an absolute coordinate
-system. If the flight has no GPS fixes, conversion retains the
-LiDAR/IMU-only positions.
+During LAS conversion, GPS latitude and longitude are interpolated to each
+scan's IMU time and converted to local east/north offsets in meters. GPS
+altitude is intentionally ignored because its variation can create large
+vertical artifacts; vertical placement currently comes from the LiDAR/IMU
+orientation only. The resulting cloud is relative to the first available GPS
+fix, not georeferenced to an absolute coordinate system. If the flight has no
+GPS fixes, conversion retains the LiDAR/IMU-only positions.
+
+The converter aligns the initial mean accelerometer direction with +Z, then
+estimates gyro bias from candidate samples with near-gravity acceleration and
+low angular rate (falling back to the initial readings if no such samples
+exist). It propagates orientation with the gyro and corrects tilt with the
+accelerometer only when acceleration magnitude is near gravity. Gyro
+integration is skipped across timestamp gaps over 0.5 seconds, which are
+reported because orientation across those gaps is unknown. Yaw remains
+gyro-only and can drift without an absolute heading reference. Scans with less
+than 340 degrees of measured angular coverage are reported but retained in the
+output.
 
 ## Repository layout
 

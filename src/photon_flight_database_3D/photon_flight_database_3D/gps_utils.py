@@ -6,13 +6,13 @@ EARTH_RADIUS_METERS = 6378137.0
 
 
 def gps_offsets_per_scan(matrix, scan_starts):
-    """Interpolate per-scan GPS fixes into local east/north/up meter offsets."""
+    """Interpolate per-scan GPS fixes into local east/north meter offsets."""
     offsets = np.zeros((len(scan_starts), 3), dtype=float)
-    if not len(scan_starts) or matrix.ndim != 2 or matrix.shape[1] < 12:
+    if not len(scan_starts) or matrix.ndim != 2 or matrix.shape[1] < 11:
         return offsets
 
     scan_ends = np.r_[scan_starts[1:], len(matrix)]
-    scan_positions = np.full((len(scan_starts), 3), np.nan)
+    scan_positions = np.full((len(scan_starts), 2), np.nan)
     scan_times = np.full(len(scan_starts), np.nan)
     for scan_index, (start, end) in enumerate(zip(scan_starts, scan_ends)):
         readings = matrix[start:end, GPS_POSITION_COLUMNS]
@@ -21,10 +21,6 @@ def gps_offsets_per_scan(matrix, scan_starts):
             scan_positions[scan_index, :2] = np.median(
                 readings[valid_horizontal, :2], axis=0)
 
-        valid_altitude = valid_horizontal & np.isfinite(readings[:, 2])
-        if valid_altitude.any():
-            scan_positions[scan_index, 2] = np.median(
-                readings[valid_altitude, 2])
         if matrix.shape[1] > 12:
             timestamps = matrix[start:end, 8]
             if np.isfinite(timestamps).any():
@@ -48,10 +44,10 @@ def gps_offsets_per_scan(matrix, scan_starts):
         if timed_fixes.any():
             timestamp_values, timestamp_groups = np.unique(
                 gps_timestamps[timed_fixes], return_inverse=True)
-            gps_positions = np.empty((len(timestamp_values), 3), dtype=float)
+            gps_positions = np.empty((len(timestamp_values), 2), dtype=float)
             timed_positions = scan_positions[timed_fixes]
             for group_index in range(len(timestamp_values)):
-                gps_positions[group_index] = np.nanmedian(
+                gps_positions[group_index] = np.median(
                     timed_positions[timestamp_groups == group_index], axis=0)
 
             if len(timestamp_values) > 1:
@@ -68,14 +64,6 @@ def gps_offsets_per_scan(matrix, scan_starts):
                     * np.radians(gps_positions[:, 0] - reference_latitude))
                 offsets[:, 0] = np.interp(query_times, gps_times, east)
                 offsets[:, 1] = np.interp(query_times, gps_times, north)
-
-                valid_altitude = np.isfinite(gps_positions[:, 2])
-                if valid_altitude.any():
-                    altitude = np.interp(
-                        query_times, gps_times[valid_altitude],
-                        gps_positions[valid_altitude, 2])
-                    offsets[:, 2] = (
-                        altitude - gps_positions[np.flatnonzero(valid_altitude)[0], 2])
                 return offsets
 
     for axis in range(2):
@@ -89,13 +77,5 @@ def gps_offsets_per_scan(matrix, scan_starts):
     offsets[:, 1] = (
         EARTH_RADIUS_METERS
         * np.radians(scan_positions[:, 0] - reference_latitude))
-
-    valid_altitude = np.isfinite(scan_positions[:, 2])
-    if valid_altitude.any():
-        altitude_indices = np.flatnonzero(valid_altitude)
-        altitude = np.interp(
-            scan_indices, altitude_indices,
-            scan_positions[altitude_indices, 2])
-        offsets[:, 2] = altitude - altitude[altitude_indices[0]]
 
     return offsets

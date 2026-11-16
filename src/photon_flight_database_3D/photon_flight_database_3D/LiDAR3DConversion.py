@@ -11,7 +11,10 @@ from photon_flight_database_3D.gps_utils import gps_offsets_per_scan
 
 def rotation_to_z(g):
     """Smallest rotation taking vector g onto +z (Rodrigues)."""
-    g = g / np.linalg.norm(g)
+    magnitude = np.linalg.norm(g)
+    if not np.isfinite(magnitude) or magnitude == 0:
+        raise RuntimeError('Cannot align an invalid accelerometer reference')
+    g = g / magnitude
     z = np.array([0.0, 0.0, 1.0])
     v = np.cross(g, z)
     c = float(g @ z)
@@ -38,6 +41,11 @@ class ConversionNode(Node):
     COLUMN_T, COLUMN_ANGLE, COLUMN_RANGE = 8, 0, 1
     COLUMN_ACCEL, COLUMN_GYRO, COLUMN_GPS = slice(2, 5), slice(5, 8), slice(9, 13)
     BIAS_SECONDS = 3.0
+    MAX_GYRO_INTEGRATION_GAP = 0.5
+    GRAVITY = 9.80665
+    ACCEL_GRAVITY_TOLERANCE = 0.2
+    ATTITUDE_CORRECTION_TAU = 2.0
+    STATIONARY_GYRO_THRESHOLD = 0.1
 
     def __init__(self):
         super().__init__('Conversion_node')
@@ -45,6 +53,10 @@ class ConversionNode(Node):
         self.roll = None
         self.pitch = None
         self.yaw = None
+        self.timestamp_gaps = []
+        self.scan_coverage_degrees = None
+        self.gyro_bias_sample_count = 0
+        self.gyro_bias_fallback = False
 
     def latest_flight_matrix(self, directory='.'):
         pattern = re.compile(r"2D_Flight_Matrix_(\d+)\.npy$")
@@ -72,6 +84,11 @@ class ConversionNode(Node):
 
         # A negative change marks a new LiDAR scan boundary.
         starts = np.flatnonzero(np.r_[True, np.diff(m[:, self.COLUMN_ANGLE]) < 0])
+        ends = np.r_[starts[1:], len(m)]
+        self.scan_coverage_degrees = np.array([
+            np.degrees(np.ptp(m[start:end, self.COLUMN_ANGLE]))
+            for start, end in zip(starts, ends)
+        ])
         scan_indices = np.arange(len(starts))
         scan_times = m[starts, self.COLUMN_T]
         valid_times = np.isfinite(scan_times)
@@ -99,18 +116,77 @@ class ConversionNode(Node):
                     readings[valid_readings, axis])
 
         n_ref = max(int(np.sum(t < self.BIAS_SECONDS)), 3)
-        rotation_to_z(accel[:n_ref].mean(axis=0))
-        bias = gyro[:n_ref].mean(axis=0)
-
-        # Smooth acceleration readings and correct gyro bias.
+        alignment = rotation_to_z(accel[:n_ref].mean(axis=0))
+        accel = accel @ alignment.T
+        gyro = gyro @ alignment.T
+        stationary_candidates = (
+            (np.abs(np.linalg.norm(accel, axis=1) - self.GRAVITY)
+             <= self.ACCEL_GRAVITY_TOLERANCE * self.GRAVITY)
+            & (np.linalg.norm(gyro, axis=1) <= self.STATIONARY_GYRO_THRESHOLD)
+        )
+        self.gyro_bias_sample_count = int(
+            np.count_nonzero(stationary_candidates))
+        self.gyro_bias_fallback = self.gyro_bias_sample_count < 3
+        if self.gyro_bias_fallback:
+            bias = np.median(gyro[:n_ref], axis=0)
+        else:
+            bias = np.median(gyro[stationary_candidates], axis=0)
         a_b = ema(accel, t, 0.2)
         w_b = gyro - bias
+        roll = np.zeros(len(starts))
+        pitch = np.zeros(len(starts))
+        yaw = np.zeros(len(starts))
+        self.timestamp_gaps = []
 
-        roll = np.arctan2(a_b[:, 1], a_b[:, 2])
-        pitch = np.arctan2(-a_b[:, 0], np.hypot(a_b[:, 1], a_b[:, 2]))
-        yaw = np.concatenate((
-            [0.0],
-            np.cumsum(0.5 * (w_b[1:, 2] + w_b[:-1, 2]) * np.diff(t))))
+        for index in range(1, len(starts)):
+            dt = t[index] - t[index - 1]
+            if dt > self.MAX_GYRO_INTEGRATION_GAP:
+                self.timestamp_gaps.append((index, dt))
+                roll[index] = roll[index - 1]
+                pitch[index] = pitch[index - 1]
+                yaw[index] = yaw[index - 1]
+                continue
+
+            sin_roll = np.sin(roll[index - 1])
+            cos_roll = np.cos(roll[index - 1])
+            cos_pitch = np.cos(pitch[index - 1])
+            safe_cos_pitch = np.copysign(
+                max(abs(cos_pitch), 1e-6), cos_pitch)
+            tan_pitch = np.sin(pitch[index - 1]) / safe_cos_pitch
+            gyro_x, gyro_y, gyro_z = (
+                w_b[index - 1] + w_b[index]) / 2.0
+
+            roll_rate = (
+                gyro_x + sin_roll * tan_pitch * gyro_y
+                + cos_roll * tan_pitch * gyro_z)
+            pitch_rate = cos_roll * gyro_y - sin_roll * gyro_z
+            yaw_rate = (
+                sin_roll / safe_cos_pitch * gyro_y
+                + cos_roll / safe_cos_pitch * gyro_z)
+            roll_predicted = roll[index - 1] + roll_rate * dt
+            pitch_predicted = pitch[index - 1] + pitch_rate * dt
+            yaw[index] = yaw[index - 1] + yaw_rate * dt
+
+            accel_magnitude = np.linalg.norm(a_b[index])
+            if abs(accel_magnitude - self.GRAVITY) <= (
+                    self.ACCEL_GRAVITY_TOLERANCE * self.GRAVITY):
+                measured_roll = np.arctan2(a_b[index, 1], a_b[index, 2])
+                measured_pitch = np.arctan2(
+                    -a_b[index, 0],
+                    np.hypot(a_b[index, 1], a_b[index, 2]))
+                correction = 1.0 - np.exp(
+                    -dt / self.ATTITUDE_CORRECTION_TAU)
+                roll_error = np.arctan2(
+                    np.sin(measured_roll - roll_predicted),
+                    np.cos(measured_roll - roll_predicted))
+                pitch_error = np.arctan2(
+                    np.sin(measured_pitch - pitch_predicted),
+                    np.cos(measured_pitch - pitch_predicted))
+                roll[index] = roll_predicted + correction * roll_error
+                pitch[index] = pitch_predicted + correction * pitch_error
+            else:
+                roll[index] = roll_predicted
+                pitch[index] = pitch_predicted
 
         self.roll, self.pitch, self.yaw = roll, pitch, yaw
         return roll, pitch, yaw
@@ -199,6 +275,32 @@ def main(args=None):
     node = ConversionNode()
     node.load_matrix()
     roll, pitch, yaw = node.calculate_pitch_roll_yaw()
+    if node.timestamp_gaps:
+        largest_gap = max(gap for _, gap in node.timestamp_gaps)
+        node.get_logger().warning(
+            f"Skipped gyro integration across {len(node.timestamp_gaps)} "
+            f"timestamp gap(s); largest gap was {largest_gap:.2f}s. "
+            "Orientation across those gaps is unknown.")
+    if node.gyro_bias_fallback:
+        node.get_logger().warning(
+            "No low-motion IMU samples were found for gyro-bias estimation; "
+            "using the initial readings as a fallback.")
+    else:
+        node.get_logger().info(
+            f"Estimated gyro bias from "
+            f"{node.gyro_bias_sample_count} low-motion samples.")
+    yaw_span = np.degrees(np.ptp(yaw))
+    if yaw_span > 360.0:
+        node.get_logger().warning(
+            f"Gyro-only yaw spans {yaw_span:.1f} degrees. Without an absolute "
+            "heading reference, yaw drift or repeated turns cannot be "
+            "distinguished.")
+    if node.scan_coverage_degrees is not None:
+        incomplete = np.count_nonzero(node.scan_coverage_degrees < 340.0)
+        if incomplete:
+            node.get_logger().warning(
+                f"{incomplete} of {len(node.scan_coverage_degrees)} scans "
+                "cover less than 340 degrees; these scans were retained.")
     try:
         output_path, point_count = node.save_las()
         node.get_logger().info(
