@@ -1,4 +1,11 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
-    "cmake.ignoreCMakeListsMissing": true
+    "cmake.ignoreCMakeListsMissing": true,
+    "ROS2.distro": "lyrical",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/lyrical/lib/python3.14/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/lyrical/lib/python3.14/site-packages"
+    ]
 }

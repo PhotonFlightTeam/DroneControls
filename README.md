@@ -29,6 +29,8 @@ IMU (/imu/data) ------+       +--> 2D_Flight_Matrix_N.npy
                       3D_Flight_PointCloud.las
 ```
 
+`/gps/readings` and `/imu/data` come from either the custom NMEA GPS and I2C IMU nodes or from a Cube+ through MAVROS and `pix_node`. See [Choose the GPS and IMU source](#choose-the-gps-and-imu-source).
+
 ## Flight matrix format
 
 Each flight matrix is stored as one rectangular NumPy 2D array after valid LiDAR scan blocks are vertically stacked.
@@ -80,16 +82,17 @@ output.
 | `src/photon_flight_servo_imu` | Servo GPIO, IMU, and GPS ROS 2 nodes |
 | `src/photon_flight_camera` | Camera trigger and image capture node |
 | `src/photon_flight_internet` | Internet connectivity publisher |
-| `src/photon_flight_pix` | PX4/MAVROS utility node |
+| `src/photon_flight_pix` | Cube+ (ArduPilot) GPS and IMU node using MAVROS |
+| `src/*_bringup` | Standalone launch files (`launchdrone.py`, `launchdrone_pix.py`) |
 | `src/rplidar_ros` | RPLiDAR ROS 2 driver |
 
 ## Requirements
 
 - Ubuntu with ROS 2 (the project uses ROS 2 C++ APIs and Python `rclpy`)
 - A supported RPLiDAR and RPLiDAR ROS 2 driver
-- The `nmea_navsat_driver` package for serial NMEA GPS input
-- An MPU-style IMU exposed through I2C
-- GPS data published through ROS 2
+- GPS and IMU data from one of two sources (see [Choose the GPS and IMU source](#choose-the-gps-and-imu-source)):
+  - Custom: the `nmea_navsat_driver` package for serial NMEA GPS input and an MPU-style IMU exposed through I2C
+  - MAVLink: a Cube+ running ArduPilot and the `mavros` package
 - Python dependencies:
   - `numpy`
   - `laspy`
@@ -183,6 +186,55 @@ The resulting cloud is written to:
 3D_Flight_PointCloud.las
 ```
 
+## Choose the GPS and IMU source
+
+GPS and accelerometer/gyroscope data can come from either of two sources. Both publish on the same topics (`/gps/readings` and `/imu/data`) in the same format, so the recorder and converter work with either. **Only run one source at a time**, because they publish to the same topics.
+
+| Source | Nodes | Hardware |
+|---|---|---|
+| Custom (original) | `nmea_serial_driver`, `gps_listener`, `imu_publisher_node` | NMEA serial GPS and an MPU-style I2C IMU |
+| MAVLink (Cube+) | `mavros_node`, `pix_node` | Cube+ running ArduPilot |
+
+`src/*_bringup/launchdrone_pix.py` starts the LiDAR nodes plus whichever source you pick with the `use_pix` argument. It is a standalone launch file (not installed with a package), so pass its path to `ros2 launch`:
+
+```bash
+# Cube+ through MAVROS (default, use_pix:=true)
+ros2 launch src/*_bringup/launchdrone_pix.py
+
+# Original NMEA GPS and I2C IMU
+ros2 launch src/*_bringup/launchdrone_pix.py use_pix:=false
+```
+
+| Argument | Default | Used when | Description |
+|---|---|---|---|
+| `use_pix` | `true` | always | `true` for the Cube+, `false` for the custom GPS and IMU |
+| `fcu_url` | `/dev/ttyACM0:921600` | `use_pix:=true` | Cube+ connection for MAVROS, `device:baud` |
+| `gps_port` | `/dev/ttyACM0` | `use_pix:=false` | NMEA GPS serial port |
+| `gps_baudrate` | `9600` | `use_pix:=false` | NMEA GPS baud rate |
+| `lidar_port` | `/dev/ttyUSB0` | always | RPLiDAR serial port |
+| `lidar_baudrate` | `115200` | always | RPLiDAR baud rate |
+| `lidar_frame` | `laser` | always | TF frame assigned to the RPLiDAR |
+
+### Cube+ (MAVLink) source
+
+`pix_node` (`src/photon_flight_pix/src/mav.cpp`, executable `mav`) subscribes to MAVROS and republishes in the custom nodes' format:
+
+| MAVROS topic (input) | Published topic (output) | Format |
+|---|---|---|
+| `/mavros/global_position/global` | `gps/readings` | `Float64MultiArray` `{lat, lon, altitude, timestamp}`; nothing is published without a GPS fix |
+| `/mavros/imu/data_raw` | `/imu/data` | `sensor_msgs/Imu` with linear acceleration (m/s²) and angular velocity (rad/s), frame `imu_link`, no orientation |
+
+Notes:
+
+- Timestamps come from MAVROS (the autopilot), not from the Pi's clock as in `imu_publisher_node`.
+- Unlike `gps_listener`, `pix_node` publishes the GPS altitude as reported rather than a fixed altitude. LAS conversion ignores altitude, so this does not affect the point cloud.
+- MAVROS is started through its own `apm.launch`, which loads the ArduPilot plugin list and configuration. To run it by hand:
+
+```bash
+ros2 launch mavros apm.launch fcu_url:=/dev/ttyACM0:921600
+ros2 run photon_flight_pix mav
+```
+
 ## Run individual nodes
 
 ```bash
@@ -195,9 +247,12 @@ ros2 run photon_flight_internet internet_publisher_node
 # Servo
 ros2 run photon_flight_servo_imu servo_driver
 
-# IMU and GPS
+# IMU and GPS (custom source)
 ros2 run photon_flight_servo_imu imu_publisher_node
 ros2 run photon_flight_servo_imu gps_listener
+
+# IMU and GPS (Cube+ source, needs MAVROS running)
+ros2 run photon_flight_pix mav
 
 # RPLiDAR client utilities
 ros2 run rplidar_ros rplidar_client
